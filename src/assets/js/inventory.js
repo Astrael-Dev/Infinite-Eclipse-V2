@@ -91,6 +91,44 @@ function renderItemSelectList() {
             if (filterRarity) ok = ok && item.rarity === filterRarity;
             return ok;
         });
+    } else if (currentCategory === '') {
+        // Inclure tous les items ET les coffres dans "Tout"
+        filtered = [
+            ...allItems.filter(item => {
+                let ok = true;
+                let type = item.type;
+                if (type && type.toLowerCase() === "objets") type = "Divers";
+                if (type && type.toLowerCase() === "consommable") type = "Consommables";
+                if (search) ok = ok && item.name.toLowerCase().includes(search);
+                if (filterRarity) ok = ok && item.rarity === filterRarity;
+                if (filterClasse) {
+                    if (Array.isArray(item.DestinatedClass)) {
+                        ok = ok && item.DestinatedClass.map(c => c.toLowerCase()).includes(filterClasse.toLowerCase());
+                    } else if (typeof item.DestinatedClass === "string" && item.DestinatedClass.trim() !== "") {
+                        ok = ok && item.DestinatedClass.toLowerCase() === filterClasse.toLowerCase();
+                    } else {
+                        ok = false;
+                    }
+                }
+                if (filterElement) {
+                    if (Array.isArray(item.element)) {
+                        ok = ok && item.element.includes(filterElement);
+                    } else if (typeof item.element === "string" && item.element.trim() !== "") {
+                        ok = ok && item.element === filterElement;
+                    } else {
+                        ok = false;
+                    }
+                }
+                return ok;
+            }),
+            ...chestItems.filter(item => {
+                let ok = true;
+                if (search) ok = ok && item.name && item.name.toLowerCase().includes(search);
+                if (filterRarity) ok = ok && item.rarity === filterRarity;
+                // Les coffres n'ont pas de classe ni d'élément à filtrer
+                return ok;
+            })
+        ];
     } else {
         filtered = allItems.filter(item => {
             let ok = true;
@@ -100,8 +138,6 @@ function renderItemSelectList() {
             if (currentCategory && type) ok = ok && type.toLowerCase().includes(currentCategory.toLowerCase());
             if (search) ok = ok && item.name.toLowerCase().includes(search);
             if (filterRarity) ok = ok && item.rarity === filterRarity;
-
-            // Utilise bien DestinatedClass ici
             if (filterClasse) {
                 if (Array.isArray(item.DestinatedClass)) {
                     ok = ok && item.DestinatedClass.map(c => c.toLowerCase()).includes(filterClasse.toLowerCase());
@@ -111,8 +147,6 @@ function renderItemSelectList() {
                     ok = false;
                 }
             }
-
-            // Gestion des éléments multiples (tableau ou string)
             if (filterElement) {
                 if (Array.isArray(item.element)) {
                     ok = ok && item.element.includes(filterElement);
@@ -195,22 +229,98 @@ function showItemSelectDetails(item) {
     `;
 }
 
-function addSelectedItem(itemName) {
-    // Cherche dans allItems puis dans chestItems si non trouvé
+// MODAL DE QUANTITÉ
+function showQuantityModal(defaultValue = 1, maxValue = 99, action = "Ajouter") {
+    return new Promise((resolve, reject) => {
+        let modal = document.getElementById('quantityModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'quantityModal';
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <div class="modal-content quantity-modal-content">
+                    <h2>${action} - Quantité</h2>
+                    <input type="number" id="quantityInput" min="1" max="${maxValue}" value="${defaultValue}" style="width:80px; font-size:1.2rem; text-align:center; margin: 20px 0;">
+                    <div class="quantity-modal-actions">
+                        <button class="add-btn" id="quantityConfirmBtn">${action}</button>
+                        <button class="btn-remove" id="quantityCancelBtn">Annuler</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        } else {
+            modal.querySelector('h2').textContent = `${action} - Quantité`;
+            const input = modal.querySelector('#quantityInput');
+            input.value = defaultValue;
+            input.max = maxValue;
+            input.min = 1;
+            modal.style.display = 'flex';
+        }
+
+        modal.style.display = 'flex';
+        const input = modal.querySelector('#quantityInput');
+        input.focus();
+        input.select();
+
+        const confirmBtn = modal.querySelector('#quantityConfirmBtn');
+        const cancelBtn = modal.querySelector('#quantityCancelBtn');
+        confirmBtn.onclick = () => {
+            let qty = parseInt(input.value, 10);
+            if (isNaN(qty) || qty < 1) qty = 1;
+            if (qty > maxValue) qty = maxValue;
+            modal.style.display = 'none';
+            resolve(qty);
+        };
+        cancelBtn.onclick = () => {
+            modal.style.display = 'none';
+            reject();
+        };
+        input.onkeydown = (e) => {
+            if (e.key === "Enter") confirmBtn.click();
+            if (e.key === "Escape") cancelBtn.click();
+        };
+    });
+}
+
+// --- AJOUT AVEC MODAL QUANTITÉ ---
+async function addSelectedItem(itemName) {
     let item = allItems.find(i => i.name === itemName);
     if (!item) item = chestItems.find(i => i.name === itemName);
     if (!item) return;
-    if (!inventories[currentInventory][item.name]) {
-        inventories[currentInventory][item.name] = { imageUrl: '', rarity: '', quantity: 0, element: '' };
+    try {
+        const qty = await showQuantityModal(1, 99, "Ajouter");
+        if (!inventories[currentInventory][item.name]) {
+            inventories[currentInventory][item.name] = { imageUrl: '', rarity: '', quantity: 0, element: '' };
+        }
+        inventories[currentInventory][item.name].imageUrl = item.imageUrl;
+        inventories[currentInventory][item.name].rarity = getRarityNumber(item.rarity);
+        inventories[currentInventory][item.name].element = item.element || '';
+        inventories[currentInventory][item.name].quantity += qty;
+        localStorage.setItem('inventories', JSON.stringify(inventories));
+        alert(`${item.name} ajouté à votre inventaire (${qty}).`);
+        loadInventory();
+        closeItemSelectModal();
+    } catch {
+        // Annulé
     }
-    inventories[currentInventory][item.name].imageUrl = item.imageUrl;
-    inventories[currentInventory][item.name].rarity = getRarityNumber(item.rarity);
-    inventories[currentInventory][item.name].element = item.element || '';
-    inventories[currentInventory][item.name].quantity += 1;
-    localStorage.setItem('inventories', JSON.stringify(inventories));
-    alert(`${item.name} ajouté à votre inventaire.`);
-    loadInventory();
-    closeItemSelectModal();
+}
+
+// --- SUPPRESSION AVEC MODAL QUANTITÉ ---
+async function removeItem(itemName) {
+    if (inventories[currentInventory][itemName]) {
+        const maxQty = inventories[currentInventory][itemName].quantity;
+        try {
+            const qty = await showQuantityModal(1, maxQty, "Supprimer");
+            inventories[currentInventory][itemName].quantity -= qty;
+            if (inventories[currentInventory][itemName].quantity <= 0) {
+                delete inventories[currentInventory][itemName];
+            }
+            localStorage.setItem('inventories', JSON.stringify(inventories));
+            loadInventory();
+        } catch {
+            // Annulé
+        }
+    }
 }
 
 // Ajoute dynamiquement les options d'éléments dans le filtre
@@ -263,17 +373,6 @@ function addItem() {
     loadInventory();
 }
 
-function removeItem(itemName) {
-    if (inventories[currentInventory][itemName]) {
-        inventories[currentInventory][itemName].quantity -= 1;
-        if (inventories[currentInventory][itemName].quantity <= 0) {
-            delete inventories[currentInventory][itemName];
-        }
-        localStorage.setItem('inventories', JSON.stringify(inventories));
-        loadInventory();
-    }
-}
-
 function loadInventory() {
     const inventoryList = document.getElementById('inventoryList');
     if (!inventoryList) return;
@@ -284,17 +383,11 @@ function loadInventory() {
         div.className = 'inventory-item';
         const rarityClass = `rarity-${getRarityClass(inventories[currentInventory][item].rarity)}`;
         const rarityText = getRarityText(inventories[currentInventory][item].rarity);
-        let elementDisplay = '';
-        if (inventories[currentInventory][item].element && elementsMap[inventories[currentInventory][item].element]) {
-            elementDisplay = `<div class="inventory-element">${elementsMap[inventories[currentInventory][item].element]}</div>`;
-        }
-
         div.innerHTML = `
             <img src="${inventories[currentInventory][item].imageUrl}" alt="${item}" class="inventory-image">
             <div class="inventory-details">
                 <div><strong>${item}</strong></div>
                 <div>Quantité: ${inventories[currentInventory][item].quantity}</div>
-                ${elementDisplay}
             </div>
             <div class="inventory-footer">
                 <div class="rarity ${rarityClass}">${rarityText}</div>
@@ -311,7 +404,6 @@ function loadInventory() {
         inventoryList.appendChild(div);
     }
 }
-
 function getRarityText(rarity) {
     switch (rarity) {
         case '1': return 'Commun';

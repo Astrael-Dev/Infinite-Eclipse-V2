@@ -22,14 +22,38 @@ function getCurrentInventory() {
 function saveInventory(inv) {
     localStorage.setItem('inventories', JSON.stringify(inv));
 }
-function addItemToInventory(itemName, quantity = 1) {
+function addItemToInventory(item) {
     const inv = getInventory();
     const name = getCurrentInventoryName();
     if (!inv[name]) inv[name] = {};
-    if (!inv[name][itemName]) inv[name][itemName] = { quantity: 0 };
-    inv[name][itemName].quantity += quantity;
+    if (!inv[name][item.name]) {
+        inv[name][item.name] = {
+            imageUrl: item.imageUrl || '',
+            rarity: getRarityNumber(item.rarity), // Correction ici
+            quantity: 0,
+            element: item.element || ''
+        };
+    }
+    // Met à jour les infos (utile si l'objet a été modifié dans le JSON)
+    inv[name][item.name].imageUrl = item.imageUrl || '';
+    inv[name][item.name].rarity = getRarityNumber(item.rarity); // Correction ici
+    inv[name][item.name].element = item.element || '';
+    inv[name][item.name].quantity += 1;
     saveInventory(inv);
 }
+// Fonction pour obtenir le numéro de rareté
+function getRarityNumber(rarity) {
+    switch (rarity) {
+        case 'Commun': return '1';
+        case 'Peu commun': return '2';
+        case 'Rare': return '3';
+        case 'Épique': return '4';
+        case 'Légendaire': return '5';
+        case 'Mythique': return '6';
+        default: return '1';
+    }
+}
+
 function removeItemFromInventory(itemName, quantity = 1) {
     const inv = getInventory();
     const name = getCurrentInventoryName();
@@ -127,6 +151,7 @@ async function openChest(chestType) {
             const loot = chestItems[Math.floor(Math.random() * chestItems.length)];
             displayLoot(loot);
             addToHistory(loot);
+            addItemToInventory(loot); // Ajoute le loot à l'inventaire
             setTimeout(() => {
                 closeModal();
             }, 2000);
