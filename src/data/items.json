@@ -1,0 +1,1111 @@
+{
+  "Commun": [
+    {
+      "name": "Marteau Lourd en Fer",
+      "type": "Arme",
+      "value": 4000,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Marteau lourd en fer, conçu pour les mineurs et constructeurs. Sa tête en acier robuste brise roches et enfonce piquets. Manche solide pour une prise sûre. Outil durable, symbole de force et d'endurance.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/0NwX9fRC/image.png"
+    },
+    {
+      "name": "Jumeaux Millénaires",
+      "type": "Arme",
+      "value": 8000,
+      "rarity": "Commun",
+      "element": "e3",
+      "description": "Catalyseur nomade lié à la Terre, fait de pierre, argile et bois. Orné de motifs naturels, il canalise les énergies terrestres pour manipuler sol, minéraux et plantes. Léger et pratique, il incarne la sagesse et l`harmonie avec la nature.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/JzZy1VFd/image.png"
+    },
+    {
+      "name": "Lance de Soldat",
+      "type": "Arme",
+      "value": 7000,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Lance en titane légère et résistante, idéale pour l`infanterie. Sa pointe acérée perce les armures avec précision. Manche équilibré pour une prise sûre et des attaques efficaces. Symbole de puissance et de fiabilité au combat.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"], 
+      "imageUrl": "https://i.postimg.cc/d0QJgbcC/image.png"
+    },
+    {
+      "name": "Arc Tribal",
+      "type": "Arme",
+      "value": 6000,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Arc tribal en bois sculpté et fibres naturelles, alliant légèreté, robustesse et précision. Derrière sa simplicité se cache un équilibre raffiné. Utilisé pour la chasse et la défense, il incarne tradition et ingéniosité.",
+      "DestinatedClass": "Rôdeur",
+      "imageUrl": "https://i.postimg.cc/0NXVPwFf/image.png"
+    },
+    {
+      "name": "Épée Miteuse",
+      "type": "Arme",
+      "value": 110,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Épée de mauvaise facture, à la lame émoussée et mal alignée. Son manche instable la rend difficile à manier. Résultat d`une forge bâclée, elle n`offre ni fiabilité ni efficacité, utilisée par défaut faute de mieux.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/Sx3fxmjC/image.png"
+    },
+    {
+      "name": "Épée des Brises",
+      "type": "Arme",
+      "value": 150,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Épée légère et fiable, prisée des voyageurs novices. Sa lame fine et équilibrée offre une prise en main facile. Solide et sans fioritures, elle convient aux dangers mineurs et accompagne souvent les premiers pas des aventuriers.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/VLFNNvhb/image.png"
+    },
+    {
+      "name": "Épée de Gelée",
+      "type": "Arme",
+      "value": 200,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Épée visqueuse faite de gelée de slime, à l`apparence fondante mais étrangement solide. Sa texture absorbe les chocs et piège les ennemis, révélant des formes sombres emprisonnées. À chaque coup, elle semble vouloir engloutir ses proies.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/tRWQXcc1/image.png"
+    },
+    {
+      "name": "Arachno-Épée",
+      "type": "Arme",
+      "value": 1500,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Une épée fréquemment détenue par la garde royale du Roi et de la Reine Araignée. Dotée d'une élégance majestueuse et d'une finition raffinée, elle symbolise le prestige et le pouvoir de la royauté arachnéenne.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/fW02Zh1X/image.png"
+    },
+    {
+      "name": "Masse à Pointes Gobelin",
+      "type": "Arme",
+      "value": 200,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Massue rudimentaire en bois brut, armée de pointes d`os acérées. Arme simple mais meurtrière, prisée des gobelins pour sa violence brutale et son efficacité sanglante.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/TYH3bFRR/image.png"
+    },
+    {
+      "name": "Chapeau Blanc",
+      "type": "Armure",
+      "value": 1000,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Chapeau de sorcier en cuir blanc souple, sobre et élégant. Résistant et confortable, il amplifie discrètement la concentration magique. Apprécié des mages itinérants pour sa praticité et sa discrétion.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/qRwHj9nD/image.png"
+    },
+    {
+      "name": "Cape Violette",
+      "type": "Armure",
+      "value": 700,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Cape violette ornée de losanges, résistante et soigneusement tissée par une grand-mère anonyme. Elle dégage un charme protecteur, offrant agilité et aisance en défense.",
+      "DestinatedClass": "",
+      "imageUrl": "https://i.postimg.cc/XY149ZdG/image.png"
+    },
+    {
+      "name": "Bottes en cuir",
+      "type": "Armure",
+      "value": 500,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Bottes en cuir souple, simples et durables, offrant confort et protection de base. Idéales pour artisans et voyageurs novices, elles s`adaptent avec le temps, devenant un allié discret mais fiable.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/vZGLCp5r/image.png"
+    },
+    {
+      "name": "Vieilles Bottes",
+      "type": "Armure",
+      "value": 200,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Ces bottes, dont le cuir est usé par les années, portent les marques d'innombrables périples. Rapiécées maintes fois avec des bouts de tissu hétéroclites, elles ne sont plus qu`un souvenir de leur ancienne gloire. Leur apparence négligée et leur confort réduit en font un choix de dernier recours, réservé à ceux qui n`ont plus d'autre option.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/KvRqvKz9/image.png"
+    },
+    {
+      "name": "Dé de Prédilection",
+      "type": "Artéfact",
+      "value": 2000,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Dé mystique à vingt faces, gravé d'écritures écarlates et chargé d'une énergie envoûtante. Il amplifie les capacités de son porteur et influence le destin à chaque lancer, mais sa faveur reste aussi imprévisible que le hasard.",
+      "imageUrl": "https://i.postimg.cc/BZrqHZQM/image.png"
+    },
+    {
+      "name": "Coupe du Crâne",
+      "type": "Artéfact",
+      "value": 1000,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Coupe dorée en forme de crâne, symbole des squelettes bandits. Utilisée lors de leurs fêtes, elle confère énergie ou chance sous la pleine lune. Relique sinistre aux pouvoirs festifs et mystérieux.", 
+      "imageUrl": "https://i.postimg.cc/prpgy6Sm/image.png"
+    },
+    {
+      "name": "Fiole d`Énergie",
+      "type": "Artéfact",
+      "value": 500,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Fiole en verre remplie d`une lueur bleutée, symbole de puissance magique. Elle renferme une énergie pure, utilisée par forgerons pour améliorer les armes. Sa brillance mystérieuse attire les aventuriers en quête de pouvoir.",
+      "imageUrl": "https://i.postimg.cc/vZFfq6bj/image.png"
+    },
+    {
+      "name": "Petite Potion de Magie",
+      "type": "Consommable",
+      "value": 50,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Petite fiole de verre contenant du mana purifié, essentielle aux mages. Elle restaure une faible quantité de magie, utile en situation critique. Pratique et portable, son usage excessif peut entraîner vertiges ou fatigue.",
+      "imageUrl": "https://i.postimg.cc/GtkQmPjW/image.png"
+    },
+    {
+      "name": "Petite Potion de Vie",
+      "type": "Consommable",
+      "value": 50,
+      "rarity": "Commun",
+      "element": "e0",
+      "description": "Un tube en verre scellé par un bouchon en bois, renfermant un liquide rouge vif aux propriétés curatives. Ce breuvage simple mais efficace régénère une petite quantité de PV, idéal pour les blessures légères ou les combats prolongés.",
+      "imageUrl": "https://i.postimg.cc/DzJz97FN/image.png"
+    }
+  ],
+  "Peu commun": [
+    {
+      "name": "Hache de Maître",
+      "type": "Arme",
+      "value": 7000,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Hache vieillissante aux marques de nombreux combats, avec une lame émoussée mais toujours utile. Manche usé et métal terni, symbole de persévérance et robustesse malgré l`âge. Fidèle aux mains expertes.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/tRkL72wq/image.png"
+    },
+    {
+      "name": "Cryo-Crash",
+      "type": "Arme",
+      "value": 18000,
+      "rarity": "Peu commun",
+      "element": "e10",
+      "description": "Massue massive en glace éternelle, infligeant des dégâts glacials dévastateurs. Ornée de flocons, chaque coup projette des éclats scintillants. Arme redoutée, symbole de destruction et de froid sur le champ de bataille.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/bwmQXj2c/image.png"
+    },
+    {
+      "name": "Arc Rapiécé",
+      "type": "Arme",
+      "value": 3200,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Arc ancien réparé avec soin, affichant ses cicatrices comme un gage d'histoire. Amélioré en précision et puissance, il retrouve sa place sur le champ de bataille, prêt à servir avec fierté.",
+      "DestinatedClass": "Rôdeur",
+      "imageUrl": "https://i.postimg.cc/SRS5KhVL/image.png"
+    },
+    {
+      "name": "Lame Éphémère",
+      "type": "Arme",
+      "value": 1200,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Épée simple et économique, souvent attribuée aux gardes et mercenaires. Fonctionnelle et solide, elle assure la défense contre menaces mineures. Pratique et accessible, idéale pour un usage courant.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/nzBJPV9k/image.png"
+    },
+    {
+      "name": "Pointe de Givre",
+      "type": "Arme",
+      "value": 2300,
+      "rarity": "Peu commun",
+      "element": "e10",
+      "description": "Épée magique forgée dans les montagnes glacées, avec une lame translucide et glaciale. Chaque coup gèle la chair, immobilisant les ennemis en les plongeant dans un froid paralysant.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/65NpfnZP/image.png"
+    },
+    {
+      "name": "Hache Zoblin Lourde",
+      "type": "Arme",
+      "value": 750,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Hache brute en bois et os, rudimentaire et puissante, symbole de la sauvagerie des Zoblins.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/KjJjgTws/image.png"
+    },
+    {
+      "name": "Plaie des Foudres",
+      "type": "Arme",
+      "value": 2300,
+      "rarity": "Peu commun",
+      "element": "e11",
+      "description": "Un espadon chargé d'électricité, capable de conjurer les foudres avec chaque coup. Sa double lame, acérée et puissante, assure une efficacité redoutable en combat, alliant force brute et puissance élémentaire.",
+      "DestinatedClass": "",
+      "imageUrl": "https://i.postimg.cc/5tTtB1Pb/image.png"
+    },
+    {
+      "name": "Appel de l`Aube",
+      "type": "Arme",
+      "value": 2000,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Une lame pure et aiguisée qui, selon les légendes apporterait les rayons du soleil avec elle.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/bvFt4xdH/image.png"
+    },
+    {
+      "name": "Chevaucheur du Ciel",
+      "type": "Arme",
+      "value": 4000,
+      "rarity": "Peu commun",
+      "element": "e4",
+      "description": "Une épée qui fut forgé par le vent. Elle déborde d'énergie céleste.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/VNPTntzg/image.png"
+    },
+    {
+      "name": "Contes de Flammes Puériles",
+      "type": "Arme",
+      "value": 1500,
+      "rarity": "Peu commun",
+      "element": "e1",
+      "description": "Des contes de fée, où est raconté des poèmes chaleureux, populaire chez les livres pour enfant.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/MZypk7F0/image.png"
+    },
+    {
+      "name": "Ruche Arcanique",
+      "type": "Armure",
+      "value": 5000,
+      "rarity": "Peu commun",
+      "element": "e22",
+      "description": "Chapeau en fibres naturelles au parfum de miel, créé par une mage apicultrice. Il attire les abeilles alliées, renforce les sorts de nature et offre une légère résistance aux poisons.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/q7jxMwd6/image.png"
+    },
+    {
+      "name": "Casque Diurne",
+      "type": "Armure",
+      "value": 5000,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Casque en acier poli de la Garde du Jour, orné d`un soleil éclatant. Confortable et offrant une excellente visibilité, il symbolise vigilance et honneur. Sans magie, mais chargé d`histoire et de prestige.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/PJQw2bQQ/image.png"
+    },
+    {
+      "name": "Plastron du Valeureux",
+      "type": "Armure",
+      "value": 5000,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Plastron en fer massif des gardes royaux, poli et gravé du blason royal. Symbole de loyauté et de courage, il allie robustesse et élégance sobre. Témoignage des batailles passées, il est désormais un objet de collection prisé.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/W19Zqxr7/image.png"
+    },
+    {
+      "name": "Talons d`Estropié",
+      "type": "Armure",
+      "value": 800,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Talons en fer élégamment sculptés, conçus pour sublimer la grâce féminine. Leur charme envoûtant séduit et désarme, rendant les plus fiers à genoux — d'où leur nom évocateur, 'estropié'.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/NjQSbCMV/image.png"
+    },
+    {
+      "name": "Bottes en Mailles",
+      "type": "Armure",
+      "value": 800,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Bottes en mailles de fer alliant protection et agilité. Légères et solides, elles offrent un bon équilibre entre défense et liberté de mouvement.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/xC7V4v7m/image.png"
+    },
+    {
+      "name": "Bottes Funèbres",
+      "type": "Armure",
+      "value": 1650,
+      "rarity": "Peu commun",
+      "element": "e14",
+      "description": "Bottes en cuir noir au toucher doux, dotées de semelles en forme de cercueil. Leur aura funèbre offre une résistance aux malédictions et à la magie nécromantique.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/Df9t4dXW/image.png"
+    },
+    {
+      "name": "Jambières du Seigneur",
+      "type": "Armure",
+      "value": 36000,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Ces imposantes jambières, forgées dans un fer noir profond, incarnent la puissance et l'autorité de ceux qui les portent. Leur surface lisse et sombre, presque matte, est gravée de motifs subtils symbolisant la domination et la souveraineté.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/SNx5YSSP/image.png"
+    },
+    {
+      "name": "Grimoire du Gel",
+      "type": "Artéfact",
+      "value": 3000,
+      "rarity": "Peu commun",
+      "element": "e10",
+      "description": "Ancien grimoire figé dans la glace, renfermant des secrets de magie du froid. Puissant mais dangereux, il confère des sorts glacials tout en engourdissant peu à peu l'âme de son lecteur.",
+      "imageUrl": "https://i.postimg.cc/x1SH8RST/image.png"
+    },
+    {
+      "name": "Moyenne Potion de Magie",
+      "type": "Consommable",
+      "value": 240,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Potion magique de taille moyenne, au liquide bleu luminescent. Elle restaure une grande quantité de mana et est prisée par les mages pour sa fiabilité en combat. Peut provoquer une légère surcharge magique après usage.",
+      "imageUrl": "https://i.postimg.cc/YCXJ7k01/image.png"
+    },
+    {
+      "name": "Potion d`Endurance",
+      "type": "Consommable",
+      "value": 400,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Une potion regorgeant de revitalisants naturels et d'énergisants puissants. Elle procure un regain d'énergie immédiat, accélère la régénération musculaire et dissipe la fatigue, permettant de repousser les limites de l'endurance physique et mentale.",
+      "imageUrl": "https://i.postimg.cc/kXsPwLrt/image.png"
+    },
+    {
+      "name": "Moyenne Potion de Vie",
+      "type": "Consommable",
+      "value": 240,
+      "rarity": "Peu commun",
+      "element": "e0",
+      "description": "Potion de soins de taille moyenne, au liquide rouge éclatant. Elle restaure une quantité importante de points de vie et procure une sensation de chaleur apaisante. Un indispensable fiable pour les aventuriers aguerris.",
+      "imageUrl": "https://i.postimg.cc/PqjtRY3C/image.png"
+    }
+  ],
+  "Rare": [
+    {
+      "name": "Arche des Eaux Dorées",
+      "type": "Arme",
+      "value": 99000,
+      "rarity": "Rare",
+      "element": "e2",
+      "description": "Arc sacré aux reflets mouvants, forgé dans un alliage baigné par la lumière du couchant marin. Ses flèches adoptent des formes fluides, pluie tranchante, geysers perçants ou écume acérée et réagissent à la proximité de l'eau. Plus puissant en milieu aquatique, il requiert un porteur respectueux et adaptable, sous peine d'être submergé par sa propre arrogance.",
+      "DestinatedClass": "Rôdeur",
+      "imageUrl": "https://i.postimg.cc/qRYgbf0x/image.png"
+    },
+    {
+      "name": "Vignes Éthérées",
+      "type": "Arme",
+      "value": 145000,
+      "rarity": "Rare",
+      "element": "e15",
+      "description": "Sceptre ancien façonné dans un bois clair, finement sculpté et orné de vignes vivantes aux feuilles irisées et de fleurs opalines éphémères. Sa perle nacrée, sertie dans un réseau de racines, capte la lumière lunaire pour canaliser puissamment la magie naturelle. Relié aux plans spirituels, ce sceptre est un prolongement de l'âme du druide ou mage, amplifiant la croissance, la guérison, et le contrôle des éléments végétaux, ainsi que la communion avec les esprits sylvestres.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/bNk809kS/image.png"
+    },
+    {
+      "name": "Parapluie Nuptial",
+      "type": "Arme",
+      "value": 18000,
+      "rarity": "Rare",
+      "element": ["e15", "e9", "e19"],
+      "description": "",
+      "DestinatedClass": "",
+      "imageUrl": "https://i.postimg.cc/JzPKDS6r/image.png"
+    },
+    {
+      "name": "Anneau Doré",
+      "type": "Arme",
+      "value": 25000,
+      "rarity": "Rare",
+      "element": ["e16", "e5"],
+      "description": "Entièrement forgé en or, ce sceptre allie simplicité élégante et éclat rassurant. Conçu pour les apprentis magiciens, il offre un catalyseur stable et sûr pour canaliser l'énergie magique et affiner les premiers sortilèges. Modeste en puissance, il ne révèle pas immédiatement tout son potentiel, mais entre des mains habiles, il représente une base solide pour progresser vers une maîtrise plus grande de l'art mystique.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/wxy5x1Yj/image.png"
+    },
+    {
+      "name": "Hache de Soldat Lourd",
+      "type": "Arme",
+      "value": 9000,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Cette hache imposante allie puissance brute et raffinement noble. Sa tête massive, taillée pour fendre les armures les plus résistantes, délivre des frappes dévastatrices avec un équilibre étonnant pour une arme de cette taille. Le manche et la lame sont richement décorés de motifs dorés finement gravés, symboles de bravoure, de conquête et d'honneur militaire. Utilisée par des divisions lourdes d'élite, cette arme est autant un outil de guerre qu'un emblème prestigieux. Dans les mains de ses porteurs, elle incarne la force irrésistible du combat et impose le respect comme la peur sur le champ de bataille.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/hPMjck9K/image.png"
+    },
+    {
+      "name": "Rune des Cimes Muettes",
+      "type": "Arme",
+      "value": 16000,
+      "rarity": "Rare",
+      "element": "e4",
+      "description": "Ornée d'un aigle majestueux à son extrémité, cette hache symbolise la force et la liberté des peuples nordiques. Sa lame robuste, gravée de runes anciennes, raconte des légendes de bravoure. À la fois arme de guerre et objet rituel, elle relie son porteur aux ancêtres et à l'esprit sauvage du Nord.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/ncDRt24c/image.png"
+    },
+    {
+      "name": "Croissant Braisé",
+      "type": "Arme",
+      "value": 20000,
+      "rarity": "Rare",
+      "element": ["e7", "e5", "e14"],
+      "description": "Ce bâton énigmatique, orné d'un croissant de lune scintillant, dégage une chaleur douce et un parfum de pain chaud mêlé à la cannelle. Son bois tiède évoque le réconfort d'un foyer, tout en canalisant une magie subtile entre clarté lunaire et chaleur protectrice. Derrière son apparence paisible se cache un pouvoir ancien, empreint de nostalgie et d'équilibre.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/jSsvpbZt/image.png"
+    },
+    {
+      "name": "Bâton du Dragon Ancien",
+      "type": "Arme",
+      "value": 9000,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Sceptre en acajou sombre, usé par le temps et chargé de magie alchimique. Jadis manié par un alchimiste, il porte les traces d'expériences oubliées. Derrière son apparence simple, une énergie subtile sommeille, prête à révéler des secrets anciens à ceux qui sauront l'éveiller.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/hvWRr6SN/image.png"
+    },
+    {
+      "name": "Claymore des Dorures",
+      "type": "Arme",
+      "value": 34000,
+      "rarity": "Rare",
+      "element": "e5",
+      "description": "Réservée aux mercenaires d'élite, cette épée moderne allie légèreté, tranchant exceptionnel et design raffiné. Forgée dans des matériaux avancés, elle symbolise l'honneur et la loyauté, récompensant les plus dignes combattants.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/13Rygk7z/image.png"
+    },
+    {
+      "name": "Torsadée Fumante",
+      "type": "Arme",
+      "value": 25000,
+      "rarity": "Rare",
+      "element": ["e1", "e2"],
+      "description": "Ce katana aux courbes étrangement torsadées dégage de fines volutes de fumée, vestige d'un échec tragique. Forgée avec soin, elle n'atteignit jamais son plein potentiel : son jeune porteur tomba rapidement au combat, écrasé par l'héritage familial. Depuis, la lame conserve la chaleur d'une honte jamais dissipée.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/0NVp71C2/image.png"
+    },
+    {
+      "name": "Ossoir Écarlate",
+      "type": "Arme",
+      "value": 30000,
+      "rarity": "Rare",
+      "element": "e12",
+      "description": "Marteau titanesque forgé dans les flammes volcaniques, sa tête d'obsidienne craquelle le sol à chaque impact. Des veines incandescentes le parcourent, libérant chaleur et ondes de choc embrasées. Arme brute des profondeurs, il incarne la fureur de la terre en colère.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/MGMFKsD3/image.png"
+    },
+    {
+      "name": "Débat des Picots",
+      "type": "Arme",
+      "value": 9500,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Arme massive hérissée de pointes, conçue pour transpercer armures et chair. Son manche solide permet des frappes brutales, écrasant tout sur son passage. Symbole de force pure, elle sème terreur et domination au cœur des mêlées.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/25LLcvkB/image.png"
+    },
+    {
+      "name": "Étoile Polaire",
+      "type": "Arme",
+      "value": 7000,
+      "rarity": "Rare",
+      "element": "e10",
+      "description": "Forgé dans un bois enchanté, cet arc projette ses flèches jusqu'à 500 mètres avec une précision glaciale. Chaque tir libère un souffle de givre, gelant l'air et paralysant les cibles sur impact. Arme idéale des éclaireurs, il allie portée, précision et magie de froid.",
+      "DestinatedClass": "Rôdeur",
+      "imageUrl": "https://i.postimg.cc/hPkCZ4sh/image.png"
+    },
+    {
+      "name": "Arc de Chevalier",
+      "type": "Arme",
+      "value": 30000,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Un arc prisé par de nombreuses armées de chevaliers lourds, réputé pour sa robustesse et son efficacité redoutable. Il permet de décocher des flèches de grand gabarit, capables de percer les armures les plus résistantes.",
+      "DestinatedClass": "Rôdeur",
+      "imageUrl": "https://i.postimg.cc/BZD0z2vT/image.png"
+    },
+    {
+      "name": "Claymore de Fer Blanc",
+      "type": "Arme",
+      "value": 12000,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Une épée d'un gabarit digne des mercenaires ambulants. Elle à été forgée avec un fer spécial.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/J0RKz3cD/image.png"
+    },
+    {
+      "name": "Les Septs Étoiles",
+      "type": "Arme",
+      "value": 5000,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Un bâton évoquant les nuances mystérieuses de la nuit, dont les reflets sombres et argentés rappellent les étoiles scintillantes. Malgré son apparence enfantine et inoffensive, il renferme un pouvoir immense, capable de manipuler les forces occultes.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/XYcnm41V/image.png"
+    },
+    {
+      "name": "Brise-Roc",
+      "type": "Arme",
+      "value": 1650,
+      "rarity": "Rare",
+      "element": "e3",
+      "description": "Un espadon taillé dans la roche des montagnes, forgé directement par les forces telluriques. Imposant et lourd, il est capable de délivrer des coups puissants et dévastateurs, exploitant toute la force brute de son matériau d'origine.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/85bhktd2/image.png"
+    },
+    {
+      "name": "Tunique du Géomancien",
+      "type": "Armure",
+      "value": 80000,
+      "rarity": "Rare",
+      "element": ["e3", "e12"],
+      "description": "Tissée de fibres minérales et de tissus anciens, cette tunique incarne l'harmonie avec la terre. Portée par les maîtres géomanciens, elle vibre de l'énergie des montagnes et du magma. Résistante et chaude, elle renforce l'affinité avec la roche et la lave.",
+      "DestinatedClass": ["Mage", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/vmF2J3tr/image.png"
+    },
+    {
+      "name": "Voile des Lustres",
+      "type": "Armure",
+      "value": 18000,
+      "rarity": "Rare",
+      "element": "e2",
+      "description": "Composé d'eau en mouvement, ce voile danse au rythme des émotions de son porteur. Il reflète la lumière avec éclat et amplifie ses sentiments, transformant son état d'esprit en un pouvoir aquatique puissant.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/pXztpGXS/image.png"
+    },
+    {
+      "name": "Gantelet Démoniaque",
+      "type": "Armure",
+      "value": 9000,
+      "rarity": "Rare",
+      "element": "e18",
+      "description": "Ce gantelet imposant, conçu à partir d'une base en or pur, est renforcé par une cuirasse rouge sombre, dont la texture semble presque organique. Étrangement chaud au toucher, il dégage une aura oppressante et malveillante qui suscite méfiance et fascination.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/8cxQ9Xgg/image.png"
+    },
+    {
+      "name": "Armure du Loup",
+      "type": "Armure",
+      "value": 11000,
+      "rarity": "Rare",
+      "element": "e10",
+      "description": "Cette armure combine mailles d'acier et fourrure épaisse, offrant protection et isolation contre le froid. Moins résistante que les armures lourdes, elle privilégie flexibilité et chaleur, idéale pour chasseurs et éclaireurs en milieu glacial.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/Ls7jwj0F/image.png"
+    },
+    {
+      "name": "Ailes de Cuivre",
+      "type": "Armure",
+      "value": 12500,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Plastron en cuivre orné de bordures en Zéphénéolite, aux reflets turquoise mystiques. Son nom vient des protections d'avant-bras en forme d'ailes, symboles de légèreté et puissance. Offrant une protection solide, il confère grâce au combat et amplifie la magie, à l'instar des Gants Turquoises.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/V6XvLt4t/image.png"
+    },
+    {
+      "name": "Gants Placides",
+      "type": "Armure",
+      "value": 8500,
+      "rarity": "Rare",
+      "element": "e10",
+      "description": "Forgés dans les montagnes glacées du Nord, ces gants de fer sont gravés de runes anciennes et enchantés pour manipuler la glace. Ils permettent de geler l'air, créer des armes de glace, et immobiliser les ennemis. Leur pouvoir offre aussi une sérénité absolue, calmant l'esprit en plein combat, mais pouvant rendre leur porteur distant et impassible.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/wTN2YqCs/image.png"
+    },
+    {
+      "name": "Gants Turquoises",
+      "type": "Armure",
+      "value": 6000,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Forgés en cuivre éclatant et incrustés de rare Zéphénéolite turquoise, ces gants allient élégance et magie. Bien que moins résistants que l'acier, ils absorbent les énergies magiques environnantes, protégeant leur porteur des sorts tout en offrant une solidité correcte au combat. Leur véritable force réside dans l'équilibre entre protection physique et défense magique.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/zXpccXKS/image.png"
+    },
+    {
+      "name": "Patins Bleutés",
+      "type": "Armure",
+      "value": 5000,
+      "rarity": "Rare",
+      "element": "e10",
+      "description": "Ces patins élégants, confectionnés en cuir bleu glacé, sont dotés de lames façonnées à partir de glace éternelle, qui ne fond jamais, peu importe les conditions. Les extrémités en fer renforcent la structure des patins, offrant à leur porteur stabilité et fluidité de mouvement sur les surfaces glacées.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/VNFKvXcC/image.png"
+    },
+    {
+      "name": "Jambières Turquoises",
+      "type": "Armure",
+      "value": 7000,
+      "rarity": "Rare",
+      "element": "e10",
+      "description": "Fabriquées en alliage de cuivre et fer, ces jambières allient légèreté, résistance et élégance. Ornées de Zéphénéolite turquoise, elles offrent une protection fiable tout en renforçant la connexion mystique de leur porteur aux forces naturelles. Un équilibre parfait entre beauté et efficacité.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/SR1GMzkN/image.png"
+    },
+    {
+      "name": "Pierre de la Raison",
+      "type": "Artéfact",
+      "value": 10000,
+      "rarity": "Rare",
+      "element": "e18",
+      "imageUrl": "https://i.postimg.cc/DzwTP9Kj/image.png"
+    },
+    {
+      "name": "Grande Potion de Magie",
+      "type": "Consommable",
+      "value": 780,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Fiole finement gravée contenant un liquide bleu iridescent, concentré en Mana purifié. Elle régénère une grande quantité de Points de Mana, utilisée par Archimages et Invocateurs en situations critiques. Son usage rapide peut provoquer une surcharge arcane, avec euphorie ou perte temporaire de coordination. Un trésor prisé des aventuriers expérimentés.",
+      "imageUrl": "https://i.postimg.cc/bvc5y7sG/image.png"
+    },
+    {
+      "name": "Boost Brumeux",
+      "type": "Consommable",
+      "value": 1200,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Flacon en verre dépoli renfermant un liquide rose effervescent, libérant un parfum fruité et magique. Ce rare élixir d'accélération temporelle donne une énergie fulgurante et une agilité accrue, permettant de passer en tête dans l'ordre des tours. Son effet rapide peut provoquer une fatigue soudaine après usage. Utilisé avec stratégie, il peut changer le cours d'un combat.",
+      "imageUrl": "https://i.postimg.cc/T2W8MhzG/image.png"
+    },
+    {
+      "name": "Grande Potion de Vie",
+      "type": "Consommable",
+      "value": 780,
+      "rarity": "Rare",
+      "element": "e0",
+      "description": "Bouteille carrée en verre renforcé, gravée de dragons symbolisant force et régénération. Son liquide rouge incandescent semble animé d'une flamme éternelle. Scellée d'un bouchon doré, cette potion restaure une grande quantité de points de vie, revitalisant même après les combats les plus durs.",
+      "imageUrl": "https://i.postimg.cc/9Qvv82f1/image.png"
+    }
+  ],
+  "Épique": [
+    {
+      "name": "Descendant du Soleil Flamboyant",
+      "type": "Arme",
+      "value": 420000,
+      "rarity": "Épique",
+      "element": ["e1", "e3", "e12"],
+      "description": "Arc légendaire, forgé non pas dans une simple forge, mais dans la lumière même du jour. Sa forme effilée, blanche nacrée et translucide par endroits, est parcourue de veines orange incandescent, comme des flammes figées. Renforcé de bois sombre imprégné des oasis oubliées, il dégage une chaleur sèche, vive sans brûler. Lorsqu'il est bandé, l'air frémit, et chaque flèche semble embrasée, laissant parfois derrière elle cendres ou éclats de lumière.",
+      "DestinatedClass": "Rôdeur",
+      "imageUrl": "https://i.postimg.cc/h46KNbmM/image.png"
+    },
+    {
+      "name": "Rêve d`une Nuit Claire",
+      "type": "Arme",
+      "value": 350000,
+      "rarity": "Épique",
+      "element": ["e2", "e6", "e5"],
+      "description": "Bâton astral au fût bleu scintillant, léger comme la brume et indestructible. Son extrémité porte une lune miniature argentée, animée d'un mouvement paisible, réagissant aux incantations de son porteur. À son activation, une bruine légère tombe, apportant apaisement et renouveau. On dit qu'il peut invoquer la pluie et calmer les cieux, forgé d'un rêve lunaire lors d'un solstice oublié.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/J4rvtwMn/image.png"
+    },
+    {
+      "name": "Recueil des Anges Déchus",
+      "type": "Arme",
+      "value": 810000,
+      "rarity": "Épique",
+      "element": ["e4", "e21", "e14"],
+      "description": "Bâton en métal pâle aux reflets d'argent terni, orné d'entrelacs formant des ailes d'ange en chute. Son orbe azurée, luminescente et sensible aux émotions, évoque une pureté perdue. Autour, des éclats de verre flottent en silence, projetant des reflets kaléidoscopiques, vestiges d'un sanctuaire brisé.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/G2vJxpJC/image.png"
+    },
+    {
+      "name": "Soleil des Cardinaux",
+      "type": "Arme",
+      "value": 55000,
+      "rarity": "Épique",
+      "element": ["e1", "e5"],
+      "description": "Sceptre forgé en or pur, éclatant comme un astre solaire. Son fût ciselé évoque des rayons de lumière, tandis qu'au sommet trône une sculpture stylisée en forme de soleil aux flammes arabesques. Exposé à la chaleur, le sceptre devient brûlant, comme imprégné d'une force solaire primordiale. Jadis insigne des Cardinaux du Zénith, il renferme un pouvoir incandescent capable d'embraser l'air et de dissiper les ténèbres.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/bNY6RQGN/image.png"
+    },
+    {
+      "name": "Déluge de la Nuit",
+      "type": "Arme",
+      "value": 120000,
+      "rarity": "Épique",
+      "element": ["e14", "e17"],
+      "description": "Sceptre imposant aux teintes bleutées, oscillant entre l'azur nocturne et l'abysse profond, il semble capturer l'essence même de la nuit. À son sommet, des cornes effilées, rappelant celles des démons ou des chèvres des cimes, se dressent avec une prestance inquiétante. Porté par une aura mystérieuse, il exhale une énergie obscure et fluide, semblable à une marée ténébreuse prête à engloutir le monde dans une tempête insondable.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/d0jN0jHR/image.png"
+    },
+    {
+      "name": "L`Omniscient",
+      "type": "Arme",
+      "value": 550000,
+      "rarity": "Épique",
+      "element": ["e13", "e18"],
+      "description": "Forgé en or pur, ce bâton majestueux s'achève par un cristal changeant, enfermant un œil sculpté qui scrute le monde. Il confère à son porteur des visions mystiques du passé, du présent, et d'un avenir incertain. Mais ces révélations troublantes menacent l'esprit, car ce savoir n'est jamais donné sans un prix que peu osent payer. Véritable guide ou piège insidieux, l'Omniscient défie ses utilisateurs autant qu'il les éclaire.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/XNrD61Dt/image.png"
+    },
+    {
+      "name": "Couteau des Veines Hypnotiques",
+      "type": "Arme",
+      "value": 86000,
+      "rarity": "Épique",
+      "element": ["e6", "e20"],
+      "description": "Ce coutelas est hanté par l'esprit tourmenté d'un vétéran autrefois redoutable, condamné à une éternité d'agonie. Vaincu dans un duel contre une entité surnaturelle, son âme fut emprisonnée dans la lame par un maléfice ancestral. Le métal froid semble vibrer faiblement, comme si le cœur battant du guerrier résonnait encore en son sein. Parfois, des cris étouffés s'élèvent, échos de la souffrance perpétuelle enfermée dans cette prison d'acier. Puissamment envoûtée, cette arme confère à son porteur la maîtrise du vétéran déchu, mais l'expose aussi à ses cauchemars et à son désespoir sans fin — une bénédiction aussi lourde qu'un fardeau.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/G2qLdYyq/image.png"
+    },
+    {
+      "name": "Décadence du Temps",
+      "type": "Arme",
+      "value": 51000,
+      "rarity": "Épique",
+      "element": ["e8", "e3"],
+      "description": "Ce marteau, relique d'une époque oubliée, porte en sa tête un sablier géant dont les grains de sable tourbillonnent sans fin. À chaque coup, il manipule le temps, ralentissant ou accélérant la réalité touchée. Son porteur devient maître du destin, frappant avec la force des siècles et déformant le cours des événements.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/jqZDMhVC/image.png"
+    },
+    {
+      "name": "Masque du Carnassier",
+      "type": "Armure",
+      "value": 80000,
+      "rarity": "Épique",
+      "element": "e0",
+      "description": "Forgé dans un alliage sombre et orné de crocs, ce masque appartenait à un guerrier impitoyable. Imprégné du sang de ses victimes, il porte une aura sinistre. Celui qui le porte entend les hurlements des âmes damnées et gagne une férocité et une force décuplées, au prix d'une lente perte d'humanité.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/jd8YzQct/image.png"
+    },
+    {
+      "name": "Robe du Sage",
+      "type": "Armure",
+      "value": 980000,
+      "rarity": "Épique",
+      "element": "e5",
+      "description": "Tissée de fibres mystiques et brodée de runes, cette robe légendaire confère une puissante énergie curative et une sérénité profonde. Elle amplifie la maîtrise des sorts de guérison et protection, mais impose aussi au porteur de porter le fardeau des souffrances des faibles, exigeant une grande force mentale.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/dVMY4RpC/image.png"
+    },
+    {
+      "name": "Côte Perlée",
+      "type": "Armure",
+      "value": 79000,
+      "rarity": "Épique",
+      "element": "e13",
+      "description": "Tunique éclatante ornée de miroirs et perles magiques, symbole d'honneur des guerriers et mages de l'Ouest. Elle allie élégance et protection, renforçant la défense physique et magique tout en amplifiant les incantations. Une œuvre d'art au service de la puissance et du raffinement.",
+      "DestinatedClass": ["Mage", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/R0Q7hzj0/image.png"
+    },
+    {
+      "name": "Gantelets du Titan Rocheux",
+      "type": "Armure",
+      "value": 14000,
+      "rarity": "Épique",
+      "element": "e3",
+      "description": "Gantelets massifs forgés dans une pierre dense, ornés d'anneaux d'or gravés. Ils offrent une résistance extrême et amplifient la force physique du porteur. Connectés à l'énergie tellurique, ils permettent de projeter des ondes de choc et d'ébranler le sol. Un héritage puissant des géants d'antan, alliant brutalité et élégance.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/02gVXKzw/image.png"
+    },
+    {
+      "name": "Bottes du Spectre Ancestral",
+      "type": "Armure",
+      "value": 22000,
+      "rarity": "Épique",
+      "element": ["e1", "e6"],
+      "description": "",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/Hn19dtS5/image.png"
+    },
+    {
+      "name": "Bottes Phantom",
+      "type": "Armure",
+      "value": 25000,
+      "rarity": "Épique",
+      "element": "e14",
+      "description": "Bottes translucides, semblant flotter, tissées dans l'essence des ombres. Elles offrent une défense exceptionnelle contre les attaques magiques en absorbant et dissipant les sorts, mais protègent peu physiquement. Prisées des mages, elles favorisent la subtilité et la magie sur la force brute.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/zv9B9d0Z/image.png"
+    },
+    {
+      "name": "Ocarina des Nuages",
+      "type": "Artéfact",
+      "value": 20000,
+      "rarity": "Épique",
+      "element": "e4",
+      "description": "Ocarina sacré aux teintes violettes et bleues, orné de motifs de nuages en mouvement. Sa mélodie divine apaise les esprits, commande les vents et peut faire pleuvoir. Relique céleste forgée par un être divin, il offre une connexion unique aux forces aériennes.",
+      "imageUrl": "https://i.postimg.cc/90LTr4yX/image.png"
+    },
+    {
+      "name": "Fiole des Âmes",
+      "type": "Artéfact",
+      "value": 15700,
+      "rarity": "Épique",
+      "element": "e0",
+      "description": "Fiole sinistre en argent, sculptée comme une lanterne gothique, renfermant un tourbillon d'âmes tourmentées. Ces esprits emprisonnés amplifient la puissance physique et magique du porteur, au prix de murmures incessants qui menacent de dévorer son âme.",
+      "imageUrl": "https://i.postimg.cc/0QSgZmVj/image.png"
+    },
+    {
+      "name": "Bougie des Reliques",
+      "type": "Artéfact",
+      "value": 20000,
+      "rarity": "Épique",
+      "element": "e1",
+      "description": "Bougie noire forgée à partir de cendres sacrées, ornée de motifs tribaux cyan luminescents. Sa flamme bleue éclaire l'obscurité et dégage une aura protectrice, repoussant les influences néfastes et fortifiant l'esprit. On dit qu'elle porte la bénédiction des anciens, révélant vérités cachées et guidant les âmes perdues.",
+      "imageUrl": "https://i.postimg.cc/26JB4pVh/image.png"
+    },
+    {
+      "name": "Basilique du Démon",
+      "type": "Artéfact",
+      "value": 50000,
+      "rarity": "Épique",
+      "element": ["e9", "e6"],
+      "description": "Relique sombre gravée de symboles infernaux, dégageant une aura oppressante et une senteur animale. La Basilique du Démon confère une force brute accrue, augmentant l'offensive, mais au prix d'une perte progressive de points de vie. Prisée des combattants prêts à sacrifier leur survie pour un pouvoir dévastateur.",
+      "imageUrl": "https://i.postimg.cc/W3hx9y7s/image.png"
+    },
+    {
+      "name": "Gigantesque Potion de Magie",
+      "type": "Consommable",
+      "value": 1150,
+      "rarity": "Épique",
+      "element": "e0",
+      "description": "Fiole hexagonale colossale en verre renforcé d'argent enchanté, gravée d'un cycle lunaire. Son liquide bleu luminescent renferme une immense réserve de Mana, destinée aux sorts titanesques et rituels majeurs. Rare et précieuse, la Gigantesque Potion de Magie offre un pouvoir dévastateur, mais son usage risque de déclencher un vortex arcane incontrôlé. Réservée aux légendes, elle exige prudence et courage.",
+      "imageUrl": "https://i.postimg.cc/3N0V7K94/image.png"
+    },
+    {
+      "name": "Gigantesque Potion de Vie",
+      "type": "Consommable",
+      "value": 1150,
+      "rarity": "Épique",
+      "element": "e0",
+      "description": "Fiole sphérique titanesque, taillée dans un cristal d'une clarté irréelle. Elle contient une liqueur luminescente, essence de vie concentrée aux pouvoirs curatifs dévastateurs. Capable de réparer même les blessures jugées irréparables, cet élixir exige une force hors norme pour être absorbé sans danger. Celui qui ose le boire tout d'un coup déclenche une régénération quasi instantanée, une véritable résurrection du corps et de l'esprit.",
+      "imageUrl": "https://i.postimg.cc/R0zgJ7d0/image.png"
+    }
+  ],
+  "Légendaire": [
+    {
+      "name": "L`Épée du Roi Maudit",
+      "type": "Arme",
+      "value": 900000,
+      "rarity": "Légendaire",
+      "element": ["e20", "e6", "e16"],
+      "description": "Quand le corps d'Arthurus, le Roi Maudit, s'effondra, un silence lourd tomba sur son empire déchu. Son épée, fichée dans le sol, resta intacte, refusant de disparaître sans son maître. L'Épée du Roi Maudit vibrait faiblement, marquée par la colère et la douleur de mille batailles. Sa lame noire, veiné de pourpre, et sa garde gravée de runes usées, semblaient imprégnées d'une malédiction. Pourtant, elle appelait, promettant pouvoir et jugement. Quiconque la saisit après le combat ressent ce poids : l'héritage d'un tyran brisé et le défi silencieux qu'elle lance : « Serez-vous meilleur que lui, ou simplement plus efficace ? »",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/MZMghkqf/image.png"
+    },
+    {
+      "name": "Clé de la Singularité",
+      "type": "Arme",
+      "value": 1200000,
+      "rarity": "Légendaire",
+      "element": ["e6", "e7", "e11"],
+      "description": "Sceptre noir terminé par une clé acérée, la Clé de la Singularité absorbe la lumière et distord la réalité. Elle crée des trous noirs et altère le temps, conférant un pouvoir immense mais dangereux. Abandonnée par une entité oubliée, elle offre destruction ou savoir interdit, au prix d'être dévoré par sa propre puissance.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/4ykKwb4L/image.png"
+    },
+    {
+      "name": "Sanctuaire des Horizons Atrophiés",
+      "type": "Arme",
+      "value": 1600000,
+      "rarity": "Légendaire",
+      "element": ["e7", "e6", "e8"],
+      "description": "Le Sanctuaire des Horizons Atrophiés est un sceptre ancien, forgé dans un métal noir mystérieux, imprégné d'une énergie instable. À son sommet flotte un trou noir miniature, absorbant la magie pour la libérer en explosions dévastatrices. Son manche porte des bannières usées, témoins de batailles oubliées, murmurant des serments anciens au porteur.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/RF1PgqCm/image.png"
+    },
+    {
+      "name": "Cataclysme Céleste",
+      "type": "Arme",
+      "value": 400000,
+      "rarity": "Légendaire",
+      "element": ["e4", "e5"],
+      "description": "Surnommée la Gardienne des Cieux, cette arme fusionne sceptre et lance autour d'une orbe d'énergie pure. Entourée d'un halo lumineux mouvant, elle déchaîne tempêtes cosmiques et brise les ténèbres, mêlant puissance destructrice et force salvatrice.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/Ghs1jxwn/image.png"
+    },
+    {
+      "name": "Choc des Errants",
+      "type": "Arme",
+      "value": 825000,
+      "rarity": "Légendaire",
+      "element": ["e6", "e23"],
+      "description": "Ce marteau en bois sombre, habité par un esprit calme mais sarcastique emprisonné dans une forêt enchantée, vibre d'une énergie singulière. Détenteur légendaire : la Reine des Araignées. L'arme inflige des coups dévastateurs tout en murmurant des conseils ironiques à son porteur, forgeant un lien unique.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/mg3VnqT7/image.png"
+    },
+    {
+      "name": "Division de Téodor",
+      "type": "Arme",
+      "value": 1000000,
+      "rarity": "Légendaire",
+      "element": "e5",
+      "description": "Ce sceptre divin, finement sculpté en métal précieux, capte la lumière en éclats dorés et argentés. Ses gravures mythologiques symbolisent la division des dieux et leur pouvoir. Artefact sacré, il incarne autorité et mystère, canalisant l'énergie divine lors des rituels.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/YCxwMdpw/image.png"
+    },
+    {
+      "name": "Guillotine des Éxodes Déchus",
+      "type": "Arme",
+      "value": 1500000,
+      "rarity": "Légendaire",
+      "element": "e6",
+      "description": "La Guillotine des Éxodes Déchus est une lourde hache à double tranchant, hantée par l'esprit d'une révolutionnaire piégée dans l'arme. Forgée pour décapiter le roi et libérer le peuple, elle vibre d'une rage contenue, imprégnée de justice et de vengeance inachevées.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/15mwKfLy/image.png"
+    },
+    {
+      "name": "Cimeterre des Éxodes Déchus",
+      "type": "Arme",
+      "value": 1800000,
+      "rarity": "Légendaire",
+      "element": ["e6", "e16"],
+      "description": "Le Cimeterre des Éxodes Déchus est une claymore imposante, hantée par l'esprit d'un guerrier loyal piégé. Sa lame vibre d'une puissance spectrale, portant l'écho de sa quête éternelle pour retrouver son roi disparu. Maniée, elle impose loyauté et damnation.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/XqhNR17K/image.png"
+    },
+    {
+      "name": "Basilique des Éxodes Déchus",
+      "type": "Arme",
+      "value": 2000000,
+      "rarity": "Légendaire",
+      "element": "e6",
+      "description": "Un marteau colossal, forgé par un roi en quête de puissance éternelle. Imprégné d'une magie ancienne et d'un esprit de destruction invoqué, il dégage une aura sombre. Chaque coup déchaîne des ondes de choc dévastatrices. Depuis, le roi a disparu, laissant derrière lui cette arme redoutée.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/YCT2nsyt/image.png"
+    },
+    {
+      "name": "Fissures des Jades",
+      "type": "Arme",
+      "value": 330000,
+      "rarity": "Légendaire",
+      "element": "e13",
+      "description": "Une aura envoûtante entoure cette claymore de cristal, façonnée à partir d'un colossal fragment de jade précieux. Elle a été sculptée sous la pression titanesque des profondeurs souterraines, conférant à la lame une puissance et une beauté incomparables.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/jS0MCJ6h/image.png"
+    },
+    {
+      "name": "Bottes du Papillon de Minuit",
+      "type": "Armure",
+      "value": 76000,
+      "rarity": "Légendaire",
+      "element": ["e7", "e4"],
+      "description": "Ces bottes en cuir blanc, ornées de motifs de papillons nocturnes, confèrent une agilité fluide et légère comme leur vol. Enchantées avec leurs âmes, elles renforcent aussi force, vitesse et magie. Élégantes et puissantes, elles sont prisées des aventuriers insaisissables entre ombre et lumière.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/L4Y2Y3xf/image.png"
+    },
+    {
+      "name": "Jambières du Guerrier Blanc",
+      "type": "Armure",
+      "value": 120000,
+      "rarity": "Légendaire",
+      "element": "e5",
+      "description": "Ces jambières éclatantes, forgées dans un titane pur d'un blanc immaculé, sont un symbole de noblesse et de vertu. Leur surface polie reflète magnifiquement les rayons du soleil, créant une aura lumineuse autour de leur porteur, presque divine sur un champ de bataille.",
+      "DestinatedClass": ["Guerrier", "Rôdeur", "Mage"],
+      "imageUrl": "https://i.postimg.cc/VsnX8T3H/image.png"
+    },
+    {
+      "name": "Couvre-Chef du Serpent",
+      "type": "Armure",
+      "value": 600000,
+      "rarity": "Légendaire",
+      "element": ["e17", "e15"],
+      "description": "Ce casque intégral, symbole de prestige d'une ancienne civilisation, était réservé aux dirigeants et guerriers d'exception. Forgé en fer orné d'or, il porte un éclatant fragment de bismuth iridescent au sommet. À l'arrière, des plumes multicolores évoquent un serpent prêt à frapper. Le Couvre-chef du Serpent confère à son porteur une aura de commandement et d'inspiration divine.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/qqY4Zjpf/image.png"
+    },
+    {
+      "name": "Bague de l`Oeil Cristallisé",
+      "type": "Artéfact",
+      "value": 21150,
+      "rarity": "Légendaire",
+      "element": "e0",
+      "description": "Cet artefact maudit porte une histoire aussi sombre que tragique. Autrefois une simple bague ornée d'un œil gravé, elle renferme aujourd'hui un véritable œil, cristallisé par des forces mystiques. L'œil appartenait à une célèbre peintre, dont la vie fut brutalement écourtée par son mari jaloux, persuadé à tort qu'elle l'avait trahi. Après sa mort, l'œil de l'artiste s'ancra dans la bague, imprégnant l'artefact d'une énergie mystérieuse. Ce pouvoir confère à son porteur des visions prophétiques et la capacité de percevoir les vérités cachées. Cependant, ces dons sont hantés par la douleur et la tristesse de l'artiste, et quiconque porte la bague risque de ressentir le poids de sa tragédie.",
+      "imageUrl": "https://i.postimg.cc/sDtPSht1/image.png"
+    },
+    {
+      "name": "Plume de Sang",
+      "type": "Artéfact",
+      "value": 25000,
+      "rarity": "Légendaire",
+      "element": "e20",
+      "description": "Ce stylo plume en argent, surmonté d'une plume écarlate, contient un sang véritable en lieu d'encre. Héritage d'un romancier tourmenté, la Plume de Sang insuffle un pouvoir sinistre aux mots tracés, influençant les esprits et invoquant des forces obscures. Mais son porteur sent peu à peu son influence maléfique s'emparer de lui.",
+      "imageUrl": "https://i.postimg.cc/qgH4TwZ9/image.png"
+    },
+    {
+      "name": "Gemme Stellaire",
+      "type": "Artéfact",
+      "value": 33000,
+      "rarity": "Légendaire",
+      "element": "e7",
+      "description": "Cette pierre ovale translucide, appelée Gemme Stellaire, renferme un ballet d'étoiles scintillantes. Lors d'événements cosmiques rares, elle s'illumine d'une lumière céleste. Elle accroît la sensibilité aux énergies astrales, permettant de canaliser des pouvoirs stellaires et de percevoir l'invisible. Relique céleste, elle lie son porteur aux mystères de l'univers.",
+      "imageUrl": "https://i.postimg.cc/G90dRRpL/image.png"
+    }
+  ],
+  "Mythique": [
+    {
+      "name": "Furie des Faucons Écailleux",
+      "type": "Arme",
+      "value": "Invendable",
+      "rarity": "Mythique",
+      "element": ["e17", "e4"],
+      "description": "Ne vous fiez pas à son nom : la Furie des Faucons Écailleux puise sa force dans l'héritage des dragons. Forgé à partir d'un ancien dracosire, cet arc d'os blanc poli est orné d'écailles rouge rubis vibrantes, renfermant une rage ancestrale. Tenir l'arc, c'est saisir un éclair brûlant : chaque flèche devient un trait de feu vivant, capable de rugir, d'exploser à l'impact ou de tracer une traînée incandescente.",
+      "DestinatedClass": "Rôdeur",
+      "imageUrl": "https://i.postimg.cc/brWVL9mB/image.png"
+    },
+    {
+      "name": "Univers Cubique",
+      "type": "Arme",
+      "value": "Invendable",
+      "rarity": "Mythique",
+      "element": ["e7", "e8", "e6"],
+      "description": "Sceptre d'une puissance infinie, il abrite un cube en lévitation, contenant un fragment du code cosmique. Il permet à son porteur de façonner la réalité, mais ce savoir immense risque de consumer l'esprit. Création ou menace, nul ne peut le dire.",
+      "DestinatedClass": "Mage",
+      "imageUrl": "https://i.postimg.cc/k41DmgD3/image.png"
+    },
+    {
+      "name": "Ailes de la Rédemption",
+      "type": "Arme",
+      "value": "Invendable",
+      "rarity": "Mythique",
+      "element": ["e5", "e1", "e4"],
+      "description": "Hache divine, gardée dans les monastères sacrés, sa lame scintille comme forgée dans les flammes du paradis. Son cri évoque les anges, mêlant beauté et terreur. Gravée d'histoires célestes, elle symbolise la justice divine, portée par ceux qui incarnent la volonté des dieux.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/xdCHPF8f/image.png"
+    },
+    {
+      "name": "Syncope Suprême de la Lune",
+      "type": "Arme",
+      "value": "Invendable",
+      "rarity": "Mythique",
+      "element": ["e6", "e14"],
+      "description": "Hache monumentale forgée dans la roche lunaire, elle scintille d'un éclat argenté et glacé. Arme des plus grands leaders leukothéens, elle a fauché dynasties et traîtres avec une précision implacable. Chargée des mémoires des empires tombés, sa lame murmure encore les esprits des rois déchus, symbole ultime de pouvoir absolu.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/RZDvDDhg/image.png"
+    },
+    {
+      "name": "Purgatoire Putride",
+      "type": "Arme",
+      "value": "Invendable",
+      "rarity": "Mythique",
+      "element": ["e1", "e20", "e23"],
+      "description": "Forcée de chair palpitante et d'os tordus, cette lame vivante abrite l'esprit vengeur d'un guerrier barbare. Chaque coup aspire le sang de l'ennemi, nourrissant une soif de carnage et la folie croissante de son porteur. Une arme de destruction anarchique, guidée par une volonté maléfique propre.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/3N3JYH3T/image.png"
+    },
+    {
+      "name": "Épée du Berserk",
+      "type": "Arme",
+      "value": "Invendable",
+      "rarity": "Mythique",
+      "element": "e20",
+      "description": "Un chef-d'œuvre de forge, façonné par le grand-père d'un illustre guerrier d'antan, cette épée colossale de trois mètres est capable de réduire quiconque en une marée de sang.",
+      "DestinatedClass": "Guerrier",
+      "imageUrl": "https://i.postimg.cc/G2V0Hmmn/image.png"
+    },
+    {
+      "name": "Le Supplice des Démons",
+      "type": "Arme",
+      "value": "Invendable",
+      "rarity": "Mythique",
+      "element": ["e1", "e5"],
+      "description": "Elle porte ce nom en raison de la lumière incandescente qui émanait d'elle sous la maîtrise d'un ancien Chasseur de démons. Son énergie prodigieuse est capable de tuer un démon de sang-froid.",
+      "DestinatedClass": ["Guerrier", "Rôdeur"],
+      "imageUrl": "https://i.postimg.cc/1R70VNSq/image.png"
+    }
+  ]
+}

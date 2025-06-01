@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Variables globales */
+:root {
+    --chest-bg: #f9f9f9;
+    --chest-card-bg: #fff;
+    --chest-card-border: #0096FF;
+    --chest-card-shadow: 0 2px 8px rgba(0,150,255,0.08);
+    --chest-card-shadow-hover: 0 6px 20px rgba(0,150,255,0.18);
+    --chest-title: #0096FF;
+    --chest-text: #333;
+    --chest-btn-bg: #fff;
+    --chest-btn-color: #0096FF;
+    --chest-btn-bg-hover: #0096FF;
+    --chest-btn-color-hover: #fff;
+    --chest-clear-bg: #fff;
+    --chest-clear-color: #ffa726;
+    --chest-clear-bg-hover: #ffa726;
+    --chest-clear-color-hover: #fff;
+    --chest-modal-bg: #fff;
+    --chest-modal-shadow: 0 8px 32px rgba(0,150,255,0.15);
+    --chest-modal-close: #e57373;
+    --chest-modal-close-hover: #d32f2f;
+    --chest-obtained-bg: #fff;
+    --chest-obtained-title: #0096FF;
+    --chest-obtained-text: #0096FF;
+    --chest-rarity-text: #fff;
+}
+
+[data-theme="dark"] {
+    --chest-bg: #222;
+    --chest-card-bg: #111;
+    --chest-card-border: #0096FF;
+    --chest-card-shadow: 0 2px 8px rgba(0,150,255,0.18);
+    --chest-card-shadow-hover: 0 6px 20px rgba(0,150,255,0.28);
+    --chest-title: #0096FF;
+    --chest-text: #fff;
+    --chest-btn-bg: #000;
+    --chest-btn-color: #0096FF;
+    --chest-btn-bg-hover: #0096FF;
+    --chest-btn-color-hover: #fff;
+    --chest-clear-bg: #111;
+    --chest-clear-color: #ffa726;
+    --chest-clear-bg-hover: #ffa726;
+    --chest-clear-color-hover: #fff;
+    --chest-modal-bg: #222b36;
+    --chest-modal-shadow: 0 8px 32px rgba(0,150,255,0.25);
+    --chest-modal-close: #e57373;
+    --chest-modal-close-hover: #d32f2f;
+    --chest-obtained-bg: #111;
+    --chest-obtained-title: #0096FF;
+    --chest-obtained-text: #0096FF;
+    --chest-rarity-text: #fff;
+}
+
+main {
+    margin-left: 300px;
+    padding: 30px 20px;
+    background: var(--chest-bg);
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--chest-title);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--chest-title);
+    margin-bottom: 20px;
+}
+
+.chest-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.chest-option {
+    background: var(--chest-card-bg);
+    border: 2px solid var(--chest-card-border);
+    border-radius: 12px;
+    box-shadow: var(--chest-card-shadow);
+    padding: 20px 30px;
+    text-align: center;
+    width: 220px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    color: var(--chest-text);
+}
+
+.chest-option:hover {
+    box-shadow: var(--chest-card-shadow-hover);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.chest-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.open-btn {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    background: var(--chest-btn-bg);
+    color: var(--chest-btn-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.open-btn:hover {
+    background: var(--chest-btn-bg-hover);
+    color: var(--chest-btn-color-hover);
+}
+
+.open-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-clear {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--chest-clear-bg);
+    color: var(--chest-clear-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-clear:hover {
+    background-color: var(--chest-clear-bg-hover);
+    color: var(--chest-clear-color-hover);
+}
+
+.btn-clear svg {
+    width: 24px;
+    height: 24px;
+}
+
+#lootHistory {
+    margin: 0 auto 40px auto;
+    width: 90%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 40px;
+    column-gap: 20px;
+    background: var(--chest-history-bg);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: var(--chest-modal-bg);
+    border-radius: 16px;
+    padding: 30px 40px;
+    box-shadow: var(--chest-modal-shadow);
+    position: relative;
+    min-width: 340px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-size: 2rem;
+    color: var(--chest-modal-close);
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.close:hover { color: var(--chest-modal-close-hover); }
+
+/* Coffre modal */
+#bigChestContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.big-chest-img {
+    width: 300px;
+    cursor: pointer;
+    filter: drop-shadow(0 8px 32px rgba(0,150,255,0.15));
+    transition: transform 0.2s, filter 0.2s;
+}
+
+/* Loot obtenu */
+.obtained-loot {
+    display: none;
+    position: fixed;
+    z-index: 1100;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.obtained-loot-content {
+    border-radius: 16px;
+    padding: 30px 40px;
+    background: var(--chest-obtained-bg);
+    box-shadow: var(--chest-obtained-bg);
+    text-align: center;
+    color: var(--chest-obtained-text);
+    animation: lootPop 0.5s;
+}
+
+@keyframes lootPop {
+    from { transform: scale(0.8); opacity: 0;}
+    to { transform: scale(1); opacity: 1;}
+}
+
+.obtained-loot-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--chest-obtained-title);
+}
+
+.obtained-loot-content img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.rarity {
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: var(--chest-rarity-text);
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+.rarity-1 { background-color: #b0bec5; }
+.rarity-2 { background-color: #81c784; }
+.rarity-3 { background-color: #64b5f6; }
+.rarity-4 { background-color: #9575cd; }
+.rarity-5 { background-color: #ffb74d; }
+.rarity-6 { background-color: #e57373; }

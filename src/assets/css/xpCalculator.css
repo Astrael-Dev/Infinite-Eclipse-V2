@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Variables globales */
+:root {
+    --xp-bg: #f9f9f9;
+    --xp-text: #333;
+    --xp-title: #0096FF;
+    --xp-label: #0096FF;
+    --xp-input-bg: #fff;
+    --xp-input-text: #333;
+    --xp-input-border: #ccc;
+    --xp-input-bg-focus: #fff;
+    --xp-input-text-focus: #0096FF;
+    --xp-input-border-focus: #0096FF;
+    --xp-btn-bg: #fff;
+    --xp-btn-color: #0096FF;
+    --xp-btn-bg-hover: #0096FF;
+    --xp-btn-color-hover: #fff;
+    --xp-reset-color: #ffa726;
+    --xp-reset-bg-hover: #ffa726;
+    --xp-progress-bg: #ccc;
+    --xp-progress-level: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    --xp-progress-xp: linear-gradient(90deg, #5bc0de 0%, #00eaff 100%);
+    --xp-progress-remaining: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%);
+    --xp-progress-label: #333;
+    --xp-result: #333;
+}
+
+[data-theme="dark"] {
+    --xp-bg: #181c20;
+    --xp-text: #fff;
+    --xp-title: #0096FF;
+    --xp-label: #0096FF;
+    --xp-input-bg: #222b36;
+    --xp-input-text: #fff;
+    --xp-input-border: #0096FF;
+    --xp-input-bg-focus: #222b36;
+    --xp-input-text-focus: #fff;
+    --xp-input-border-focus: #0096FF;
+    --xp-btn-bg: #111;
+    --xp-btn-color: #0096FF;
+    --xp-btn-bg-hover: #0096FF;
+    --xp-btn-color-hover: #fff;
+    --xp-reset-color: #ffa726;
+    --xp-reset-bg-hover: #ffa726;
+    --xp-progress-bg: #333;
+    --xp-progress-level: linear-gradient(90deg, #00f5c3 0%, #00d9f5 100%);     /* turquoise-bleu */
+    --xp-progress-xp: linear-gradient(90deg, #ff8c00 0%, #ffb347 100%);       /* orange à abricot */
+    --xp-progress-remaining: linear-gradient(90deg, #d66efd 0%, #8f00ff 100%); /* violet profond */
+    --xp-progress-label: #fff;
+    --xp-result: #fff;
+}
+
+/* Style général pour le calculateur d'XP */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--xp-bg);
+    color: var(--xp-text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content */
+main {
+    margin-left: 300px; /* Laisse de la place pour la sidebar */
+    padding: 20px;
+    flex: 1;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: var(--xp-title);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--xp-label);
+}
+
+.form-group input,
+.form-group select {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 3px solid var(--xp-input-border);
+    border-radius: 5px;
+    background: var(--xp-input-bg);
+    color: var(--xp-input-text);
+    transition: border-color 0.3s, color 0.3s, background 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--xp-input-border-focus);
+    background: var(--xp-input-bg-focus);
+    color: var(--xp-input-text-focus);
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--xp-btn-bg);
+    color: var(--xp-btn-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.btn svg {
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.calculate-btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculate-btn:hover {
+    background-color: var(--xp-btn-bg-hover);
+    color: var(--xp-btn-color-hover);
+}
+
+.reset-btn {
+    font-family: 'Poppins', sans-serif;
+    color: var(--xp-reset-color);
+}
+
+.reset-btn:hover {
+    background-color: var(--xp-reset-bg-hover);
+    color: #fff;
+}
+
+/* Progress bars */
+.progress-bar {
+    width: 90%;
+    background-color: var(--xp-progress-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    transition: width 0.3s;
+}
+
+.level-progress {
+    background: var(--xp-progress-level);
+}
+
+.xp-progress {
+    background: var(--xp-progress-xp);
+}
+
+.remaining-xp-progress {
+    background: var(--xp-progress-remaining);
+}
+
+.progress-label {
+    margin-left: 15px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--xp-progress-label);
+}
+
+/* Result section */
+#result {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--xp-result);
+    margin-top: 20px;
+}

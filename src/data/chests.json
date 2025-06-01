@@ -1,0 +1,8 @@
+{
+    "Chests": [
+        { "name": "Coffre Commun", "type": "Coffre", "value": "Invendable", "rarity": "Commun", "imageUrl": "https://i.postimg.cc/DfxpyG3L/image.png" },
+        { "name": "Coffre Rare", "type": "Coffre", "value": "Invendable", "rarity": "Rare", "imageUrl": "https://i.postimg.cc/QNRBG6Yz/image.png" },
+        { "name": "Coffre Epique", "type": "Coffre", "value": "Invendable", "rarity": "Épique", "imageUrl": "https://i.postimg.cc/D087YbXs/image.png" },
+        { "name": "Coffre Légendaire", "type": "Coffre", "value": "Invendable", "rarity": "Légendaire", "imageUrl": "https://i.postimg.cc/9QTnVt5b/image.png" }
+    ]
+}

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* Variables globales */
+:root {
+    --wallet-bg: #f9f9f9;
+    --wallet-text: #333;
+    --wallet-title: #0096FF;
+    --wallet-label: #0096FF;
+    --wallet-input-bg: #fff;
+    --wallet-input-text: #333;
+    --wallet-input-border: #ccc;
+    --wallet-display-bg: #f9f9f9;
+    --wallet-display-text: #333;
+    --wallet-display-border: #ccc;
+    --wallet-btn-bg: #fff;
+    --wallet-btn-color: #0096FF;
+    --wallet-btn-bg-hover: #0096FF;
+    --wallet-btn-color-hover: #fff;
+    --wallet-add-color: #4b8f4e;
+    --wallet-add-bg-hover: #4b8f4e;
+    --wallet-remove-color: #d32f2f;
+    --wallet-remove-bg-hover: #d32f2f;
+    --wallet-reset-color: #ffa726;
+    --wallet-reset-bg-hover: #ffa726;
+    --wallet-toggle-bg: #64b5f6;
+    --wallet-toggle-bg-hover: #42a5f5;
+    --wallet-toggle-color: #fff;
+    --wallet-history-bg: #f9f9f9;
+    --wallet-history-border: #ccc;
+}
+
+[data-theme="dark"] {
+    --wallet-bg: #222;
+    --wallet-text: #fff;
+    --wallet-title: #0096FF;
+    --wallet-label: #0096FF;
+    --wallet-input-bg: #222b36;
+    --wallet-input-text: #fff;
+    --wallet-input-border: #0096FF;
+    --wallet-display-bg: #222b36;
+    --wallet-display-text: #fff;
+    --wallet-display-border: #0096FF;
+    --wallet-btn-bg: #111;
+    --wallet-btn-color: #0096FF;
+    --wallet-btn-bg-hover: #0096FF;
+    --wallet-btn-color-hover: #fff;
+    --wallet-add-color: #4b8f4e;
+    --wallet-add-bg-hover: #4b8f4e;
+    --wallet-remove-color: #e57373;
+    --wallet-remove-bg-hover: #d32f2f;
+    --wallet-reset-color: #ffa726;
+    --wallet-reset-bg-hover: #ffa726;
+    --wallet-toggle-bg: #111;
+    --wallet-toggle-bg-hover: #0096FF;
+    --wallet-toggle-color: #0096FF;
+    --wallet-toggle-color-hover: #fff;
+    --wallet-history-bg: #222b36;
+    --wallet-history-border: #0096FF;
+}
+
+/* Style général */
+body {
+    background-color: var(--wallet-bg);
+    color: var(--wallet-text);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    margin-left: 300px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    color: var(--wallet-title);
+    margin-bottom: 20px;
+}
+
+/* Formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: var(--wallet-label);
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    font-family: 'JetBrains Mono', monospace;
+    width: 98%;
+    padding: 10px;
+    border: 3px solid var(--wallet-input-border);
+    border-radius: 5px;
+    font-size: 1rem;
+    background: var(--wallet-input-bg);
+    color: var(--wallet-input-text);
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--wallet-title);
+    outline: none;
+}
+
+/* Montant actuel */
+.wallet-display {
+    width: 98%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--wallet-display-text);
+    background-color: var(--wallet-display-bg);
+    padding: 10px;
+    border: 3px solid var(--wallet-display-border);
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.wallet-display:hover {
+    border-color: var(--wallet-title);
+}
+
+/* Boutons */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--wallet-btn-bg);
+    color: var(--wallet-btn-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--wallet-btn-bg-hover);
+    color: var(--wallet-btn-color-hover);
+}
+
+.btn svg {
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+}
+
+.add-btn {
+    font-family: 'Poppins', sans-serif;
+    color: var(--wallet-add-color);
+}
+
+.add-btn:hover {
+    background-color: var(--wallet-add-bg-hover);
+    color: #fff;
+}
+
+.remove-btn {
+    font-family: 'Poppins', sans-serif;
+    color: var(--wallet-remove-color);
+}
+
+.remove-btn:hover {
+    background-color: var(--wallet-remove-bg-hover);
+    color: #fff;
+}
+
+.reset-btn {
+    font-family: 'Poppins', sans-serif;
+    color: var(--wallet-reset-color);
+}
+
+.reset-btn:hover {
+    background-color: var(--wallet-reset-bg-hover);
+    color: #fff;
+}
+
+.toggle-btn {
+    font-family: 'Poppins', sans-serif;
+    display: flex; /* comme .add-btn de inventory.css */
+    align-items: center; /* verticalement centré */
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: var(--wallet-toggle-bg);
+    color: var(--wallet-toggle-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-btn svg {
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+}
+
+/* Historique des transactions */
+.transaction-history {
+    font-family: 'JetBrains Mono', monospace;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid var(--wallet-history-border);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--wallet-history-bg);
+    color: var(--wallet-text);
+}
+
+.transaction-history div {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}

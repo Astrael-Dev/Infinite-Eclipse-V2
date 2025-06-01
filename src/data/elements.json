@@ -1,0 +1,28 @@
+{
+    "Elements": [
+        { "name": "❌ Aucun élément", "id": "e0" },
+        { "name": "🔥 Feu", "id": "e1" },
+        { "name": "💧 Eau", "id": "e2" },
+        { "name": "🪨 Terre", "id": "e3" },
+        { "name": "💨 Air", "id": "e4" },
+        { "name": "☀️ Lumière", "id": "e5" },
+        { "name": "🌀 Chaos", "id": "e6" },
+        { "name": "🌌 Espace", "id": "e7" },
+        { "name": "🕒 Temps", "id": "e8" },
+        { "name": "☠️ Poison", "id": "e9" },
+        { "name": "🧊 Glace", "id": "e10" },
+        { "name": "⚡ Foudre", "id": "e11" },
+        { "name": "🌋 Magma", "id": "e12" },
+        { "name": "💎 Cristal", "id": "e13" },
+        { "name": "👁️ Ombre", "id": "e14" },
+        { "name": "🌿 Végétation", "id": "e15" },
+        { "name": "🔩 Métal", "id": "e16" },
+        { "name": "🪶 Draconéther", "id": "e17" },
+        { "name": "🫀 Esprit", "id": "e18" },
+        { "name": "❤️ Amour", "id": "e19" },
+        { "name": "🩸 Sang", "id": "e20" },
+        { "name": "🪟 Verre", "id": "e21" },
+        { "name": "🍊 Fruit", "id": "e22" },
+        {"name": "🍄 Décomposition", "id": "e23" }
+    ]
+}

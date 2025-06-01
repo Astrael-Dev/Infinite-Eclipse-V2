@@ -1,0 +1,71 @@
+/* Variables pour le header */
+:root {
+    --header-bg: #f9f9f9;
+    --header-user-name: #0096FF;
+    --header-currency: #333;
+}
+
+[data-theme="dark"] {
+    --header-bg: #222;
+    --header-user-name: #0096FF;
+    --header-currency: #fff;
+}
+
+/* Header container */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--header-bg);
+}
+
+/* Profil utilisateur (photo + nom) */
+#profile-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 300px;
+    gap: 10px;
+}
+
+/* Photo de profil */
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+/* Nom d'utilisateur */
+.user-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--header-user-name);
+}
+
+/* Currency display */
+#currencyDisplay {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Élément individuel de la monnaie */
+.currency-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: var(--header-currency);
+}
+
+/* Icône de la monnaie */
+.currency-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}

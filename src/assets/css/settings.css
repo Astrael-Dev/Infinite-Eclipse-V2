@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+/* Variables globales */
+:root {
+    --settings-bg: #f9f9f9;
+    --settings-bg-alt: #f0f0f0;
+    --settings-menu-bg: #f9f9f9;
+    --settings-menu-border: #ccc;
+    --settings-menu-active-bg: #f0f0f0;
+    --settings-menu-active-color: #333;
+    --settings-menu-color: #ccc;
+    --settings-menu-title: #0096FF;
+    --settings-menu-active-border: #0096FF;
+    --settings-content-bg: #f9f9f9;
+    --settings-content-color: #333;
+    --profile-picture-border: #0096FF;
+    --profile-picture-bg: #eee;
+    --profile-picture-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --btn-bg: #fff;
+    --btn-color: #0096FF;
+    --btn-bg-hover: #0096FF;
+    --btn-color-hover: #fff;
+    --input-bg: #f0f0f0;
+    --input-color: #aaa;
+    --input-border: #ccc;
+    --input-bg-enabled: #f0f0f0;
+    --input-color-enabled: #222;
+    --input-border-enabled: #0096FF;
+    --input-bg-disabled: #f0f0f0;
+    --input-color-disabled: #aaa;
+    --input-border-disabled: #ccc;
+    --dropdown-bg: #fff;
+    --dropdown-border: #ccc;
+    --dropdown-shadow: 0 2px 8px rgba(0,150,255,0.08);
+    --dropdown-option-color: #0096FF;
+    --dropdown-option-bg-hover: #0096FF;
+    --dropdown-option-color-hover: #fff;
+    --theme-btn-bg: #fff;
+    --theme-btn-color: #0096FF;
+    --theme-btn-color-hover: #fff;
+    --theme-btn-bg-hover: #0096FF;
+}
+
+[data-theme="dark"] {
+    --settings-bg: #222;
+    --settings-bg-alt: #111;
+    --settings-menu-bg: #222;
+    --settings-menu-border: #0096FF;
+    --settings-menu-active-bg: #111;
+    --settings-menu-active-color: #fff;
+    --settings-menu-color: #0096FF;
+    --settings-menu-title: #0096FF;
+    --settings-menu-active-border: #0096FF;
+    --settings-content-bg: #222;
+    --settings-content-color: #fff;
+    --profile-picture-border: #0096FF;
+    --profile-picture-bg: #111;
+    --profile-picture-shadow: 0 2px 8px rgba(0,150,255,0.12);
+    --btn-bg: #111;
+    --btn-color: #0096FF;
+    --btn-bg-hover: #0096FF;
+    --btn-color-hover: #fff;
+    --input-bg: #111;
+    --input-color: #fff;
+    --input-border: #0096FF;
+    --input-bg-enabled: #111;
+    --input-color-enabled: #fff;
+    --input-border-enabled: #0096FF;
+    --input-bg-disabled: #111;
+    --input-color-disabled: #aaa;
+    --input-border-disabled: #0096FF;
+    --dropdown-bg: #111;
+    --dropdown-border: #0096FF;
+    --dropdown-shadow: 0 2px 8px rgba(0,150,255,0.18);
+    --dropdown-option-color: #0096FF;
+    --dropdown-option-bg-hover: #0096FF;
+    --dropdown-option-color-hover: #fff;
+    --theme-btn-bg: #111;
+    --theme-btn-color: #0096FF;
+    --theme-btn-color-hover: #fff;
+    --theme-btn-bg-hover: #0096FF;
+}
+
+body {
+    background: var(--settings-bg);
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: var(--settings-content-color);
+}
+
+.settings-menu {
+    width: 180px;
+    background: var(--settings-menu-bg);
+    border-right: 1px solid var(--settings-menu-border);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+    position: fixed;
+    margin-left: 300px; 
+    top: 0;
+    z-index: 20;
+}
+
+.settings-menu h3 {
+    text-align: center;
+    color: var(--settings-menu-title);
+    font-size: 1.1rem;
+    margin: 24px 0 12px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.settings-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.settings-menu li {
+    color: var(--settings-menu-color);
+    font-size: 0.98rem;
+    padding: 13px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-right: 4px solid transparent;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.settings-menu li.active,
+.settings-menu li:hover {
+    color: var(--settings-menu-active-color);
+    background: var(--settings-menu-active-bg);
+    border-right: 4px solid var(--settings-menu-active-border);
+}
+
+.settings-content {
+    margin-left: 260px; /* 80px (sidebar) + 180px (settings-menu) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 36px 16px;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--settings-content-bg);
+    color: var(--settings-content-color);
+}
+
+.profile-picture-large {
+    margin-left: 95px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--profile-picture-border);
+    margin-bottom: 22px;
+    background: var(--profile-picture-bg);
+    box-shadow: var(--profile-picture-shadow);
+}
+
+.change-picture-btn {
+    font-family: 'Poppins', sans-serif;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    background-color: var(--btn-bg); 
+    color: var(--btn-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.change-picture-btn:hover {
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-color-hover);
+}
+
+.account-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    max-width: 320px;
+}
+.account-field-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+}
+.account-field-row input {
+    flex: 1;
+    padding: 13px 16px;
+    border: 2px solid var(--input-border);
+    border-radius: 7px;
+    font-size: 1.08rem;
+    background: var(--input-bg);
+    color: var(--input-color);
+    transition: border 0.2s, color 0.2s, background 0.2s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    outline: none;
+    box-sizing: border-box;
+}
+.account-field-row input:disabled {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--input-bg-disabled);
+    color: var(--input-color-disabled);
+    border: 2px solid var(--input-border-disabled);
+}
+.account-field-row input:enabled {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--input-bg-enabled);
+    color: var(--input-color-enabled);
+    border: 2px solid var(--input-border-enabled);
+}
+.account-field-row button {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: center;
+    margin: 5px auto;
+    padding: 10px 20px;
+    background-color: var(--btn-bg); 
+    color: var(--btn-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.account-field-row button:hover {
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-color-hover);
+}
+
+/* Dropdown thème */
+.theme-dropdown-container {
+    position: relative;
+    margin: 40px auto 0 auto;
+    width: 600px; /* même largeur que le bouton */
+}
+
+.theme-dropdown-btn {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* occupe toute la largeur du conteneur */
+    padding: 22px 28px;
+    background: var(--theme-btn-bg);
+    color: var(--theme-btn-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-align: center;
+}
+
+.theme-dropdown-btn svg {
+    width: 24px; 
+    height: 24px;
+    margin-right: 10px; 
+}
+.theme-dropdown-btn:hover {
+    background: var(--theme-btn-bg-hover);
+    color: var(--theme-btn-color-hover);
+}
+
+.theme-dropdown {
+    display: none;
+    position: absolute;
+    left: 0; right: 0;
+    background: var(--dropdown-bg);
+    border: 1.5px solid var(--dropdown-border);
+    border-radius: 10px;
+    margin-top: 6px;
+    z-index: 100;
+    box-shadow: var(--dropdown-shadow);
+    min-width: 320px; /* même largeur que le bouton */
+}
+
+.theme-dropdown.show {
+    display: block;
+}
+
+.theme-option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px; /* espace entre l'icône et le texte */
+    padding: 20px 28px;
+    cursor: pointer;
+    font-size: 1.18rem;
+    color: var(--dropdown-option-color);
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+.theme-option:hover {
+    background: var(--dropdown-option-bg-hover);
+    color: var(--dropdown-option-color-hover);
+}

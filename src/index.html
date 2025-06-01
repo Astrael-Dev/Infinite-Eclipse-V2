@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Eclipse - Accueil</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="favicon" href="assets/images/icons/logo_default.png" type="image/png">
+</head>
+<body>
+<video id="whiteVideo" class="background-video" autoplay muted loop playsinline>
+  <source src="assets/videos/homeWhite.mp4" type="video/mp4">
+</video>
+<video id="BlackVideo" class="background-video" autoplay muted loop playsinline style="display:none;">
+    <source src="assets/videos/homeBlack.mp4" type="video/mp4">
+</video>
+<img src="assets/images/icons/infinite-eclipse-logo-c.png" alt="Logo" class="logo">
+<div id="buttonGroup">
+    <button class="btn register-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil-icon lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
+    S'inscrire</button>
+    <button class="btn login-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    Se connecter</button>
+</div>
+<!-- Modal d'inscription -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Inscription</h2>
+        <form id="registerForm">
+            <label for="username">Pseudo :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de Passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Conteneur pour le choix de l'image -->
+            <div class="image-upload-container">
+                <label for="imageInput" class="image-label">Veuillez choisir une image :</label>
+                <input type="file" id="imageInput" accept="image/*" style="display: none;" required>
+                <label for="imageInput">
+                    <div class="image-circle" id="imagePreview">
+                        <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-plus-icon lucide-image-plus">
+                            <path d="M16 5h6"/>
+                            <path d="M19 2v6"/>
+                            <path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5"/>
+                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                            <circle cx="9" cy="9" r="2"/>
+                        </svg>
+                    </div>
+                </label>
+            </div>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+</div>
+<!-- Modal de connexion -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Connexion</h2>
+        <form id="loginForm">
+            <p id="loginMessage">Tapez le mot de passe pour accéder au compte de <span id="loginUsername"></span></p>
+            <label for="loginPassword">Mot de Passe :</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <p id="loginError" style="color: red; display: none;">Mot de passe incorrect</p>
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+</div>
+<audio id="backgroundAudio" src="assets/sounds/WelcomeUser.mp3"></audio>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/themes.js"></script>
+<script src="assets/js/accountManagement.js"></script>
+</body>
+</html>
