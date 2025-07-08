@@ -8,6 +8,10 @@
       "element": "e0",
       "description": "Marteau lourd en fer, conçu pour les mineurs et constructeurs. Sa tête en acier robuste brise roches et enfonce piquets. Manche solide pour une prise sûre. Outil durable, symbole de force et d'endurance.",
       "DestinatedClass": "Guerrier",
+      "DestinatedRank": "F",
+      "effects": {
+        "baseDamage": 20
+      },
       "imageUrl": "https://i.postimg.cc/0NwX9fRC/image.png"
     },
     {
@@ -18,6 +22,10 @@
       "element": "e3",
       "description": "Catalyseur nomade lié à la Terre, fait de pierre, argile et bois. Orné de motifs naturels, il canalise les énergies terrestres pour manipuler sol, minéraux et plantes. Léger et pratique, il incarne la sagesse et l`harmonie avec la nature.",
       "DestinatedClass": "Mage",
+      "DestinatedRank": "F",
+      "effects": {
+        "baseDamage": 25
+      },
       "imageUrl": "https://i.postimg.cc/JzZy1VFd/image.png"
     },
     {
@@ -28,6 +36,10 @@
       "element": "e0",
       "description": "Lance en titane légère et résistante, idéale pour l`infanterie. Sa pointe acérée perce les armures avec précision. Manche équilibré pour une prise sûre et des attaques efficaces. Symbole de puissance et de fiabilité au combat.",
       "DestinatedClass": ["Guerrier", "Rôdeur"], 
+      "DestinatedRank": "F",
+      "effects": {
+        "baseDamage": 20
+      },
       "imageUrl": "https://i.postimg.cc/d0QJgbcC/image.png"
     },
     {

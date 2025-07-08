@@ -1,0 +1,287 @@
+[
+  {
+    "id": 1,
+    "name": "Les rôdeurs des plaines",
+    "difficulty": "normal",
+    "type": "Principale",
+    "giver": "Habitants de Moleblue",
+    "recommendedLevel": 5,
+    "image": "https://i.pinimg.com/736x/00/a8/d0/00a8d0d67edc3b8d4628df3445acc6bf.jpg",
+    "location": "Plaine du Prélude",
+    "steps": [
+      {
+        "name": "1. Les nuisances incessantes",
+        "objectives": ["Tuer 20 Gobelins", "Tuer 5 Gobelins bleus"],
+        "description": "Des gobelins rôdent dans la plaine. Les voyageurs sont constamment attaqués. Réduisez leur nombre.",
+        "rewards": [
+          { "type": "xp", "value": 750 },
+          { "type": "money", "value": 1500 }
+        ]
+      },
+      {
+        "name": "2. Le retour au village",
+        "objectives": ["Retourner au village", "Vendre le butin obtenu"],
+        "description": "Maintenant que vous avez tué les gobelins, retournez au village et vendez le butin que vous avez obtenu.",
+        "rewards": [
+          { "type": "xp", "value": 500 },
+          { "type": "money", "value": 300 },
+          { "type": "eclipseShards", "value": 5 }
+        ]
+      }
+    ],
+    "status": "not-started",
+    "currentStep": 0,
+    "newStep": false
+  },
+  {
+    "id": 2,
+    "name": "Les mages pénibles",
+    "difficulty": "medium",
+    "type": "Secondaire",
+    "giver": "Individu Anti-Sorcier",
+    "recommendedLevel": 10,
+    "image": "https://i.pinimg.com/736x/59/4d/5e/594d5e573e019bcaff8c2d43800c8e59.jpg",
+    "location": "Plaine du Prélude",
+    "steps": [
+      {
+        "name": "1. Les totémiers",
+        "objectives": [
+          "Tuer 5 Totémiers Aéromanciens",
+          "Tuer 5 Totémiers de l'Entre-Terre"
+        ],
+        "description": "Les Totémiers sont des espèces similaires aux gobelins, mais sont beaucoup plus minces et faibles physiquement. Ils ont comblé cette faiblesse par leur magie surprenante. Ils hantent les aventuriers, seriez-vous capable de les vaincre ?",
+        "rewards": [
+          { "type": "xp", "value": 3280 },
+          { "type": "money", "value": 4000 }
+        ]
+      }
+    ],
+    "status": "not-started",
+    "currentStep": 0,
+    "newStep": false
+  },
+  {
+    "id": 3,
+    "name": "La chasse du maniaque",
+    "difficulty": "intense",
+    "recommendedLevel": 10,
+    "type": "Secondaire",
+    "giver": "Collectionneur d'Or",
+    "image": "https://i.pinimg.com/736x/e6/21/91/e6219177a5dd3f8144f55aa2d82af58f.jpg",
+    "location": "Plaine du Prélude",
+    "steps": [
+      {
+        "name": "1. La chasse",
+        "objectives": [
+          "Tuer des monstres afin de récupérer les coffres voulus par le Collectionneur d'Or",
+          "Récupérer 10 Coffres communs",
+          "Récupérer 5 Coffres rares"
+        ],
+        "description": "Le Collectionneur d'Or est un homme étrange qui cherche à récupérer des coffres de monstres. Il vous a demandé de l'aider dans sa quête, avec une récompense généreuse si vous lui ramenez ces fameux coffres.",
+        "rewards": [
+          { "type": "xp", "value": 1000 },
+          { "type": "money", "value": 2000 }
+        ]
+      },
+      {
+        "name": "2. La récompense",
+        "objectives": ["Retourner voir le Collectionneur d'Or", "Lui ramener les coffres"],
+        "description": "Vous avez réussi à récupérer les coffres demandés. Retournez voir le Collectionneur d'Or afin de lui remettre les coffres.",
+        "rewards": [
+          { "type": "xp", "value": 5000 },
+          { "type": "money", "value": 20000 },
+          { "type": "eclipseShards", "value": 10 }
+        ]
+      }
+    ],
+    "status": "not-started",
+    "currentStep": 0,
+    "newStep": false
+  },
+  {
+    "id": 4,
+    "name": "Les grincements du donjon oublié",
+    "difficulty": "hardcore",
+    "recommendedLevel": 30,
+    "type": "Principale",
+    "giver": "Habitants de Moleblue",
+    "image": "https://i.pinimg.com/736x/c8/aa/08/c8aa082173cf5e443039664a24c136d3.jpg",
+    "location": "Donjon des Pavés",
+    "steps": [
+      {
+        "name": "1. Le donjon oublié",
+        "objectives": ["Explorer le donjon", "Vaincre 5 Gardien des Ruines"],
+        "description": "Ce donjon n'a pas été exploré depuis des décennies, mais des rumeurs circulent sur un monstre féroce caché à l'intérieur. Faites attention, les gardiens de ces ruines vous attaqueront.",
+        "rewards": [
+          { "type": "xp", "value": 2000 },
+          { "type": "money", "value": 4000 }
+        ]
+      },
+      {
+        "name": "2. Les serpents méchaniques",
+        "objectives": ["Vaincre 5 Archa-Serpent des Ruines", "Récupurer le butin"],
+        "description": "Ces serpents mécaniques possèdent une orbe magique puissante, vainquez-les afin d'accéder à la salle où repose le monstre.",
+        "rewards": [
+          { "type": "xp", "value": 2500 },
+          { "type": "money", "value": 5000 }
+        ]
+      },
+      {
+        "name": "3. Le Golem des Pavés",
+        "objectives": ["Tuer Crackle"],
+        "description": "Ce colosse de magma, est une brute. Tuez-le pour ramener la sérenité dans la plaine.",
+        "rewards": [
+          { "type": "xp", "value": 5000 },
+          { "type": "money", "value": 10000 },
+          { "type": "eclipseShards", "value": 10 }
+        ]
+      }
+    ],
+    "status": "not-started",
+    "currentStep": 0,
+    "newStep": false
+  },
+  {
+    "id": 5,
+    "name": "L'arrivée du sauveur?",
+    "difficulty": "intense",
+    "recommendedLevel": 30,
+    "type": "Principale",
+    "giver": "Habitants de Moleblue",
+    "image": "https://i.pinimg.com/736x/ae/32/c4/ae32c434787495f58632d57c36b16ab8.jpg",
+    "location": "Plaine du Prélude",
+    "steps": [
+      {
+        "name": "1. La prophétie",
+        "objectives": ["Parler au Sage Sénile"],
+        "description": "Le Sage Sénile a une prophétie à vous raconter, mais il faut le trouver.",
+        "rewards": [
+          { "type": "xp", "value": 500 },
+          { "type": "money", "value": 1000 }
+        ]
+      },
+      {
+        "name": "2. La quête du futur sauveur",
+        "objectives": [
+          "Prouver votre dévotion en tant que nouveau potentiel sauveur",
+          "Tuer 20 Gobelins",
+          "Tuer 10 Gobelins Bleus",
+          "Tuer 2 Gobelins Alpha",
+          "Tuer 5 Totémiers de chaque type",
+          "Tuer 10 Zoblins"
+        ],
+        "description": "Après avoir écouté la prophétie, le Sage Sénile vous a demandé de prouver votre valeur en tuant des monstres. Il vous a donné une liste de monstres à tuer.",
+        "rewards": [
+          { "type": "xp", "value": 6000 },
+          { "type": "money", "value": 8000 }
+        ]
+      },
+      {
+        "name": "3. Le retour au village",
+        "objectives": [
+          "Retourner à Moleblue",
+          "Dire adieu et partir vers la Forêt des Damnés, un endroit interdit"
+        ],
+        "description": "Vous avez prouvé votre valeur, mais le Sage Sénile vous a demandé de partir vers la Forêt des Damnés, un endroit interdit.",
+        "rewards": [
+          { "type": "xp", "value": 2000 },
+          { "type": "money", "value": 1000 },
+          { "type": "item", "value": "(Pour les mages) Les Septs Étoiles" },
+          { "type": "item", "value": "(Pour les rôdeurs) Étoile Polaire" },
+          { "type": "item", "value": "(Pour les guerriers) Plaie des Foudres" },
+          { "type": "eclipseShards", "value": 10 }
+        ]
+      }
+    ],
+    "status": "not-started",
+    "currentStep": 0,
+    "newStep": false
+  },
+  {
+    "id": 6,
+    "name": "Le fleuriste maladroit",
+    "difficulty": "easy",
+    "recommendedLevel": 5,
+    "type": "Secondaire",
+    "giver": "Fleuriste de Moleblue",
+    "image": "https://i.pinimg.com/736x/d3/fd/e7/d3fde730319f03c01d55bd80f6fd7da3.jpg",
+    "location": "Plaine du Prélude",
+    "steps": [
+      {
+        "name": "1. La cueillette",
+        "objectives": ["Ramasser 10 fleurs se trouvant dans la Plaine du Prélude"],
+        "description": "Le fleuriste de Moleblue est en panique, il a cassé ses pots et ruiné ses pousses, il vous demande de l'aider à récolter des fleurs.",
+        "rewards": [
+          { "type": "xp", "value": 200 },
+          { "type": "money", "value": 500 }
+        ]
+      },
+      {
+        "name": "2. La livraison",
+        "objectives": ["Ramener les fleurs au fleuriste"],
+        "description": "Vous avez récolté les fleurs, maintenant ramenez-les au fleuriste.",
+        "rewards": [
+          { "type": "xp", "value": 200 },
+          { "type": "money", "value": 500 }
+        ]
+      }
+    ],
+    "status": "not-started",
+    "currentStep": 0,
+    "newStep": false
+  },
+  {
+    "id": 7,
+    "name": "Les stocks des Cuisines Bellow",
+    "difficulty": "easy",
+    "recommendedLevel": 5,
+    "type": "Journalière",
+    "giver": "Cuisines Bellow",
+    "image": "https://i.pinimg.com/736x/09/29/c6/0929c6043ee8350ccde54c3a9e0fa043.jpg",
+    "location": "Plaine du Prélude",
+    "steps": [
+      {
+        "name": "1. Les bons légumes!",
+        "objectives": [
+          "Récolter 10 Oignons",
+          "Récolter 10 Pommes de terre",
+          "Récolter 10 Carottes",
+          "Récolter 5 Choux",
+          "Récolter 5 Tomates"
+        ],
+        "description": "Les Cuisines Bellow ont besoin de légumes pour ses plats. Mais les employés ne peuvent pas s'aventurer dans les plaines en raison des hordes de monstres présentes, et la prochaine livraison par bateau se fait dans longtemps. Récoltez les légumes demandés.",
+        "rewards": [
+          { "type": "xp", "value": 200 },
+          { "type": "money", "value": 500 },
+          { "type": "item", "value": "Soupe de légumes et herbes" },
+          { "type": "eclipseShards", "value": 5 }
+        ]
+      },
+      {
+        "name": "2. Fruits succulents!",
+        "objectives": ["Récolter 10 Fruits Pastel", "Récolter 5 Baies Helena"],
+        "description": "Les Cuisines Bellow ont aussi besoin de fruits pour ses plats. Allez récolter les fruits demandés.",
+        "rewards": [
+          { "type": "xp", "value": 200 },
+          { "type": "money", "value": 500 },
+          { "type": "eclipseShards", "value": 5 },
+          { "type": "item", "value": "Pomme royale de la Ruche" }
+        ]
+      },
+      {
+        "name": "3. Les champignons Hashak!",
+        "objectives": ["Récolter 5 Champignons Hashak"],
+        "description": "Les Cuisines Bellow vous demande un dernier service: Ils ont besoin d'un certain type de champignon pour un plat spécial. Allez récolter les champignons demandés.",
+        "rewards": [
+          { "type": "xp", "value": 200 },
+          { "type": "money", "value": 500 },
+          { "type": "item", "value": "Myriade de champignons avec ses pommes de terre" },
+          { "type": "eclipseShards", "value": 5 }
+        ]
+      }
+    ],
+    "status": "not-started",
+    "currentStep": 0,
+    "newStep": false
+  }
+]

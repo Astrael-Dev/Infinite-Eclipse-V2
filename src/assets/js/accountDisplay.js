@@ -19,7 +19,7 @@ function updateHeader() {
             const walletAmountDisplay = document.getElementById('walletAmountDisplay');
             if (walletAmountDisplay) {
                 const walletAmount = parseInt(localStorage.getItem('wallet')) || 0; // Utilise la clé "wallet"
-                walletAmountDisplay.textContent = `${walletAmount.toLocaleString()} 💎`; // Format avec séparation des unités
+                walletAmountDisplay.textContent = `${walletAmount.toLocaleString()}`; // Format avec séparation des unités
             }
         } else {
             console.warn("Aucun utilisateur trouvé dans localStorage.");
@@ -33,12 +33,17 @@ function updateHeader() {
 document.addEventListener('DOMContentLoaded', () => {
     updateHeader();
 
-    // Actualiser les informations du portefeuille toutes les 2ms
+    // Actualiser les informations du portefeuille et des éclats toutes les 2ms
     setInterval(() => {
         const walletAmountDisplay = document.getElementById('walletAmountDisplay');
         if (walletAmountDisplay) {
-            const walletAmount = parseInt(localStorage.getItem('wallet')) || 0; // Utilise la clé "wallet"
-            walletAmountDisplay.textContent = `${walletAmount.toLocaleString()} 💎`;
+            const walletAmount = parseInt(localStorage.getItem('wallet')) || 0;
+            walletAmountDisplay.textContent = `${walletAmount.toLocaleString()}`;
+        }
+        const eclipseShardAmount = document.getElementById('eclipseShardAmount');
+        if (eclipseShardAmount) {
+            const shards = parseInt(localStorage.getItem('eclipseShards')) || 0;
+            eclipseShardAmount.textContent = shards;
         }
     }, 2); // Intervalle de 2ms
 });
@@ -46,4 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Initialiser le portefeuille si non défini
 if (!localStorage.getItem('wallet')) {
     localStorage.setItem('wallet', '0'); // Utilise la clé "wallet"
+// Initialiser les éclats du crépuscule si non défini
+if (!localStorage.getItem('eclipseShards')) {
+    localStorage.setItem('eclipseShards', '0');
+}
 }

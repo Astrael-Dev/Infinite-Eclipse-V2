@@ -89,6 +89,15 @@ function renderItemSelectList() {
             let ok = true;
             if (search) ok = ok && item.name && item.name.toLowerCase().includes(search);
             if (filterRarity) ok = ok && item.rarity === filterRarity;
+            if (filterElement) {
+                if (Array.isArray(item.element)) {
+                    ok = ok && item.element.includes(filterElement);
+                } else if (typeof item.element === "string" && item.element.trim() !== "") {
+                    ok = ok && item.element === filterElement;
+                } else {
+                    ok = false;
+                }
+            }
             return ok;
         });
     } else if (currentCategory === '') {
@@ -125,7 +134,15 @@ function renderItemSelectList() {
                 let ok = true;
                 if (search) ok = ok && item.name && item.name.toLowerCase().includes(search);
                 if (filterRarity) ok = ok && item.rarity === filterRarity;
-                // Les coffres n'ont pas de classe ni d'élément à filtrer
+                if (filterElement) {
+                    if (Array.isArray(item.element)) {
+                        ok = ok && item.element.includes(filterElement);
+                    } else if (typeof item.element === "string" && item.element.trim() !== "") {
+                        ok = ok && item.element === filterElement;
+                    } else {
+                        ok = false;
+                    }
+                }
                 return ok;
             })
         ];

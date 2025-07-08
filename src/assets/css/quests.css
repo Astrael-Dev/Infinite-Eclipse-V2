@@ -1,0 +1,331 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Variables globales héritées de inventory.css */
+:root {
+    --quest-blue: #0096FF;
+    --quest-turquoise: #40E0D0;
+    --quest-red: #e57373;
+    --quest-red-hover: #d32f2f;
+    --quest-bg: #f9f9f9;
+    --quest-text: #333;
+    --quest-title: var(--quest-blue);
+    --quest-btn-bg: #fff;
+    --quest-btn-text: var(--quest-blue);
+    --quest-btn-bg-hover: var(--quest-blue);
+    --quest-btn-text-hover: #fff;
+    --quest-remove-bg: var(--quest-red);
+    --quest-remove-bg-hover: var(--quest-red-hover);
+    --quest-remove-text: #fff;
+    --quest-modal-bg: #fff;
+    --quest-modal-shadow: 0 8px 32px rgba(0,150,255,0.15);
+    --quest-border: #ccc;
+    --quest-card-bg: #fff;
+    --quest-card-border: #ddd;
+    --quest-card-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --quest-badge-bg: #ffd700;
+    --quest-badge-text: #8b4513;
+    --quest-progress-bg: #e8e8e8;
+    --quest-progress-fill: linear-gradient(to right, #40e0d0, #2e8b57);
+    --quest-progress-label: #333;
+}
+
+[data-theme="dark"] {
+    --quest-bg: #222;
+    --quest-text: #fff;
+    --quest-title: var(--quest-blue);
+    --quest-btn-bg: #111;
+    --quest-btn-text: var(--quest-blue);
+    --quest-btn-bg-hover: var(--quest-blue);
+    --quest-btn-text-hover: #fff;
+    --quest-remove-bg: var(--quest-red);
+    --quest-remove-bg-hover: var(--quest-red-hover);
+    --quest-remove-text: #fff;
+    --quest-modal-bg: #222b36;
+    --quest-modal-shadow: 0 8px 32px rgba(0,150,255,0.25);
+    --quest-border: var(--quest-blue);
+    --quest-card-bg: #111;
+    --quest-card-border: var(--quest-blue);
+    --quest-card-shadow: 0 2px 5px rgba(0,150,255,0.15);
+    --quest-badge-bg: #ffd700;
+    --quest-badge-text: #8b4513;
+    --quest-progress-bg: #111;
+    --quest-progress-fill: linear-gradient(to right, #40e0d0, #2e8b57);
+    --quest-progress-label: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--quest-bg);
+    color: var(--quest-text);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 300px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: var(--quest-title);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quests-section {
+    margin-bottom: 40px;
+}
+
+.quests-section h2 {
+    color: var(--quest-title);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.quests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin: 0 10px 30px 10px;
+}
+
+/* Cartes des quêtes */
+.quest-card {
+    background: var(--quest-card-bg);
+    border: 1.5px solid var(--quest-card-border);
+    border-radius: 15px;
+    padding: 20px 18px 18px 18px;
+    text-align: center;
+    box-shadow: var(--quest-card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--quest-text);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.quest-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 150, 255, 0.18);
+}
+
+.quest-card h3 {
+    color: var(--quest-title);
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.07);
+}
+
+.quest-difficulty {
+    font-size: 1.1em;
+    color: var(--quest-turquoise);
+    margin: 5px 0 10px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quest-card button {
+    background: var(--quest-btn-bg);
+    color: var(--quest-btn-text);
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.quest-card button:hover {
+    background: var(--quest-btn-bg-hover);
+    color: var(--quest-btn-text-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 150, 255, 0.13);
+}
+
+.quest-card .new-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--quest-badge-bg);
+    color: var(--quest-badge-text);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.13);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: var(--quest-modal-bg);
+    padding: 40px 32px 32px 32px;
+    border-radius: 25px;
+    width: 95%;
+    max-width: 700px;
+    text-align: left;
+    color: var(--quest-text);
+    position: relative;
+    box-shadow: var(--quest-modal-shadow);
+    animation: slideIn 0.4s;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-content h2 {
+    color: var(--quest-title);
+    margin-bottom: 18px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-content h3 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: var(--quest-title);
+    text-align: left;
+    font-weight: bold;
+}
+
+.modal-content p {
+    margin: 10px 0;
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+.modal-content ul {
+    margin: 10px 0 20px 0;
+    padding-left: 25px;
+    list-style-type: disc;
+    font-size: 1.1em;
+}
+
+.modal-content ul li {
+    margin-bottom: 7px;
+}
+
+#accept-quest-btn {
+    background: var(--quest-btn-bg);
+    color: var(--quest-btn-text);
+    border: none;
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+#accept-quest-btn:hover {
+    background: var(--quest-btn-bg-hover);
+    color: var(--quest-btn-text-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 150, 255, 0.13);
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: var(--quest-title);
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.modal-content .close:hover {
+    color: var(--quest-red-hover);
+    transform: scale(1.2);
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: var(--quest-progress-bg);
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+    height: 20px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    background: var(--quest-progress-fill);
+    transition: width 0.4s;
+}
+
+.progress-label {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--quest-progress-label);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .quests-grid {
+        grid-template-columns: 1fr;
+    }
+    .modal-content {
+        padding: 18px 6vw;
+    }
+}
